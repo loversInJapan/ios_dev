@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-               BuildableName = "Category"
-               BlueprintName = "Category"
-               ReferencedContainer = "container:Category.xcodeproj">
+               BlueprintIdentifier = "FCAEAB2F1C33C9100035CE84"
+               BuildableName = "@property_memory_management"
+               BlueprintName = "@property_memory_management"
+               ReferencedContainer = "container:@property_memory_management.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB2F1C33C9100035CE84"
+            BuildableName = "@property_memory_management"
+            BlueprintName = "@property_memory_management"
+            ReferencedContainer = "container:@property_memory_management.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB2F1C33C9100035CE84"
+            BuildableName = "@property_memory_management"
+            BlueprintName = "@property_memory_management"
+            ReferencedContainer = "container:@property_memory_management.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB2F1C33C9100035CE84"
+            BuildableName = "@property_memory_management"
+            BlueprintName = "@property_memory_management"
+            ReferencedContainer = "container:@property_memory_management.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

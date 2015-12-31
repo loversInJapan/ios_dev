@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-               BuildableName = "Category"
-               BlueprintName = "Category"
-               ReferencedContainer = "container:Category.xcodeproj">
+               BlueprintIdentifier = "FCAEAB001C3366030035CE84"
+               BuildableName = "memory_management"
+               BlueprintName = "memory_management"
+               ReferencedContainer = "container:memory_management.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB001C3366030035CE84"
+            BuildableName = "memory_management"
+            BlueprintName = "memory_management"
+            ReferencedContainer = "container:memory_management.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,13 +55,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB001C3366030035CE84"
+            BuildableName = "memory_management"
+            BlueprintName = "memory_management"
+            ReferencedContainer = "container:memory_management.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -74,10 +79,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC869B4D1C32719100125CA2"
-            BuildableName = "Category"
-            BlueprintName = "Category"
-            ReferencedContainer = "container:Category.xcodeproj">
+            BlueprintIdentifier = "FCAEAB001C3366030035CE84"
+            BuildableName = "memory_management"
+            BlueprintName = "memory_management"
+            ReferencedContainer = "container:memory_management.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
