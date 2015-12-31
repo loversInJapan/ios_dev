@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCAEAB1B1C336BA70035CE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB1A1C336BA70035CE84 /* main.m */; };
-		FCAEAB231C337AB20035CE84 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB221C337AB20035CE84 /* Book.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FCAEAB261C337B4A0035CE84 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB251C337B4A0035CE84 /* Person.m */; };
+		FCA1AC3C1C34C04700969C54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA1AC3B1C34C04700969C54 /* main.m */; };
+		FCA1AC441C34C06400969C54 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA1AC431C34C06400969C54 /* User.m */; };
+		FCA1AC471C34C2A600969C54 /* Status.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA1AC461C34C2A600969C54 /* Status.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FCAEAB151C336BA70035CE84 /* CopyFiles */ = {
+		FCA1AC361C34C04700969C54 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FCAEAB171C336BA70035CE84 /* memory_management_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memory_management_2; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCAEAB1A1C336BA70035CE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FCAEAB211C337AB20035CE84 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		FCAEAB221C337AB20035CE84 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		FCAEAB241C337B4A0035CE84 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		FCAEAB251C337B4A0035CE84 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FCA1AC381C34C04700969C54 /* practice_weibo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = practice_weibo; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCA1AC3B1C34C04700969C54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCA1AC421C34C06400969C54 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FCA1AC431C34C06400969C54 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FCA1AC451C34C2A600969C54 /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
+		FCA1AC461C34C2A600969C54 /* Status.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Status.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FCAEAB141C336BA70035CE84 /* Frameworks */ = {
+		FCA1AC351C34C04700969C54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,100 +44,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FCAEAB0E1C336BA70035CE84 = {
+		FCA1AC2F1C34C04700969C54 = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB191C336BA70035CE84 /* memory_management_2 */,
-				FCAEAB181C336BA70035CE84 /* Products */,
+				FCA1AC3A1C34C04700969C54 /* practice_weibo */,
+				FCA1AC391C34C04700969C54 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FCAEAB181C336BA70035CE84 /* Products */ = {
+		FCA1AC391C34C04700969C54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB171C336BA70035CE84 /* memory_management_2 */,
+				FCA1AC381C34C04700969C54 /* practice_weibo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCAEAB191C336BA70035CE84 /* memory_management_2 */ = {
+		FCA1AC3A1C34C04700969C54 /* practice_weibo */ = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB1A1C336BA70035CE84 /* main.m */,
-				FCAEAB211C337AB20035CE84 /* Book.h */,
-				FCAEAB221C337AB20035CE84 /* Book.m */,
-				FCAEAB241C337B4A0035CE84 /* Person.h */,
-				FCAEAB251C337B4A0035CE84 /* Person.m */,
+				FCA1AC3B1C34C04700969C54 /* main.m */,
+				FCA1AC421C34C06400969C54 /* User.h */,
+				FCA1AC431C34C06400969C54 /* User.m */,
+				FCA1AC451C34C2A600969C54 /* Status.h */,
+				FCA1AC461C34C2A600969C54 /* Status.m */,
 			);
-			path = memory_management_2;
+			path = practice_weibo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCAEAB161C336BA70035CE84 /* memory_management_2 */ = {
+		FCA1AC371C34C04700969C54 /* practice_weibo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCAEAB1E1C336BA70035CE84 /* Build configuration list for PBXNativeTarget "memory_management_2" */;
+			buildConfigurationList = FCA1AC3F1C34C04700969C54 /* Build configuration list for PBXNativeTarget "practice_weibo" */;
 			buildPhases = (
-				FCAEAB131C336BA70035CE84 /* Sources */,
-				FCAEAB141C336BA70035CE84 /* Frameworks */,
-				FCAEAB151C336BA70035CE84 /* CopyFiles */,
+				FCA1AC341C34C04700969C54 /* Sources */,
+				FCA1AC351C34C04700969C54 /* Frameworks */,
+				FCA1AC361C34C04700969C54 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = memory_management_2;
-			productName = memory_management_2;
-			productReference = FCAEAB171C336BA70035CE84 /* memory_management_2 */;
+			name = practice_weibo;
+			productName = practice_weibo;
+			productReference = FCA1AC381C34C04700969C54 /* practice_weibo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FCAEAB0F1C336BA70035CE84 /* Project object */ = {
+		FCA1AC301C34C04700969C54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Jon;
 				TargetAttributes = {
-					FCAEAB161C336BA70035CE84 = {
+					FCA1AC371C34C04700969C54 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = FCAEAB121C336BA70035CE84 /* Build configuration list for PBXProject "memory_management_2" */;
+			buildConfigurationList = FCA1AC331C34C04700969C54 /* Build configuration list for PBXProject "practice_weibo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FCAEAB0E1C336BA70035CE84;
-			productRefGroup = FCAEAB181C336BA70035CE84 /* Products */;
+			mainGroup = FCA1AC2F1C34C04700969C54;
+			productRefGroup = FCA1AC391C34C04700969C54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCAEAB161C336BA70035CE84 /* memory_management_2 */,
+				FCA1AC371C34C04700969C54 /* practice_weibo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FCAEAB131C336BA70035CE84 /* Sources */ = {
+		FCA1AC341C34C04700969C54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCAEAB261C337B4A0035CE84 /* Person.m in Sources */,
-				FCAEAB231C337AB20035CE84 /* Book.m in Sources */,
-				FCAEAB1B1C336BA70035CE84 /* main.m in Sources */,
+				FCA1AC441C34C06400969C54 /* User.m in Sources */,
+				FCA1AC471C34C2A600969C54 /* Status.m in Sources */,
+				FCA1AC3C1C34C04700969C54 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FCAEAB1C1C336BA70035CE84 /* Debug */ = {
+		FCA1AC3D1C34C04700969C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -180,7 +180,7 @@
 			};
 			name = Debug;
 		};
-		FCAEAB1D1C336BA70035CE84 /* Release */ = {
+		FCA1AC3E1C34C04700969C54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,18 +216,16 @@
 			};
 			name = Release;
 		};
-		FCAEAB1F1C336BA70035CE84 /* Debug */ = {
+		FCA1AC401C34C04700969C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FCAEAB201C336BA70035CE84 /* Release */ = {
+		FCA1AC411C34C04700969C54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,25 +233,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCAEAB121C336BA70035CE84 /* Build configuration list for PBXProject "memory_management_2" */ = {
+		FCA1AC331C34C04700969C54 /* Build configuration list for PBXProject "practice_weibo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCAEAB1C1C336BA70035CE84 /* Debug */,
-				FCAEAB1D1C336BA70035CE84 /* Release */,
+				FCA1AC3D1C34C04700969C54 /* Debug */,
+				FCA1AC3E1C34C04700969C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCAEAB1E1C336BA70035CE84 /* Build configuration list for PBXNativeTarget "memory_management_2" */ = {
+		FCA1AC3F1C34C04700969C54 /* Build configuration list for PBXNativeTarget "practice_weibo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCAEAB1F1C336BA70035CE84 /* Debug */,
-				FCAEAB201C336BA70035CE84 /* Release */,
+				FCA1AC401C34C04700969C54 /* Debug */,
+				FCA1AC411C34C04700969C54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FCAEAB0F1C336BA70035CE84 /* Project object */;
+	rootObject = FCA1AC301C34C04700969C54 /* Project object */;
 }

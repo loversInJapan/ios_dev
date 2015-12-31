@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FCAEAB1B1C336BA70035CE84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB1A1C336BA70035CE84 /* main.m */; };
-		FCAEAB231C337AB20035CE84 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB221C337AB20035CE84 /* Book.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FCAEAB261C337B4A0035CE84 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAEAB251C337B4A0035CE84 /* Person.m */; };
+		FC527FDF1C352B9E00A6FE91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC527FDE1C352B9E00A6FE91 /* main.m */; };
+		FC527FE71C352BAB00A6FE91 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FC527FE61C352BAB00A6FE91 /* Person.m */; };
+		FC527FEA1C352BE400A6FE91 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = FC527FE91C352BE400A6FE91 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FCAEAB151C336BA70035CE84 /* CopyFiles */ = {
+		FC527FD91C352B9E00A6FE91 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FCAEAB171C336BA70035CE84 /* memory_management_2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memory_management_2; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCAEAB1A1C336BA70035CE84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FCAEAB211C337AB20035CE84 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		FCAEAB221C337AB20035CE84 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
-		FCAEAB241C337B4A0035CE84 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		FCAEAB251C337B4A0035CE84 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FC527FDB1C352B9E00A6FE91 /* ARC_circle_reference */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ARC_circle_reference; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC527FDE1C352B9E00A6FE91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC527FE51C352BAB00A6FE91 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FC527FE61C352BAB00A6FE91 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FC527FE81C352BE400A6FE91 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		FC527FE91C352BE400A6FE91 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FCAEAB141C336BA70035CE84 /* Frameworks */ = {
+		FC527FD81C352B9E00A6FE91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,100 +44,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FCAEAB0E1C336BA70035CE84 = {
+		FC527FD21C352B9E00A6FE91 = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB191C336BA70035CE84 /* memory_management_2 */,
-				FCAEAB181C336BA70035CE84 /* Products */,
+				FC527FDD1C352B9E00A6FE91 /* ARC_circle_reference */,
+				FC527FDC1C352B9E00A6FE91 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FCAEAB181C336BA70035CE84 /* Products */ = {
+		FC527FDC1C352B9E00A6FE91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB171C336BA70035CE84 /* memory_management_2 */,
+				FC527FDB1C352B9E00A6FE91 /* ARC_circle_reference */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCAEAB191C336BA70035CE84 /* memory_management_2 */ = {
+		FC527FDD1C352B9E00A6FE91 /* ARC_circle_reference */ = {
 			isa = PBXGroup;
 			children = (
-				FCAEAB1A1C336BA70035CE84 /* main.m */,
-				FCAEAB211C337AB20035CE84 /* Book.h */,
-				FCAEAB221C337AB20035CE84 /* Book.m */,
-				FCAEAB241C337B4A0035CE84 /* Person.h */,
-				FCAEAB251C337B4A0035CE84 /* Person.m */,
+				FC527FDE1C352B9E00A6FE91 /* main.m */,
+				FC527FE51C352BAB00A6FE91 /* Person.h */,
+				FC527FE61C352BAB00A6FE91 /* Person.m */,
+				FC527FE81C352BE400A6FE91 /* Dog.h */,
+				FC527FE91C352BE400A6FE91 /* Dog.m */,
 			);
-			path = memory_management_2;
+			path = ARC_circle_reference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCAEAB161C336BA70035CE84 /* memory_management_2 */ = {
+		FC527FDA1C352B9E00A6FE91 /* ARC_circle_reference */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCAEAB1E1C336BA70035CE84 /* Build configuration list for PBXNativeTarget "memory_management_2" */;
+			buildConfigurationList = FC527FE21C352B9E00A6FE91 /* Build configuration list for PBXNativeTarget "ARC_circle_reference" */;
 			buildPhases = (
-				FCAEAB131C336BA70035CE84 /* Sources */,
-				FCAEAB141C336BA70035CE84 /* Frameworks */,
-				FCAEAB151C336BA70035CE84 /* CopyFiles */,
+				FC527FD71C352B9E00A6FE91 /* Sources */,
+				FC527FD81C352B9E00A6FE91 /* Frameworks */,
+				FC527FD91C352B9E00A6FE91 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = memory_management_2;
-			productName = memory_management_2;
-			productReference = FCAEAB171C336BA70035CE84 /* memory_management_2 */;
+			name = ARC_circle_reference;
+			productName = ARC_circle_reference;
+			productReference = FC527FDB1C352B9E00A6FE91 /* ARC_circle_reference */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FCAEAB0F1C336BA70035CE84 /* Project object */ = {
+		FC527FD31C352B9E00A6FE91 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Jon;
 				TargetAttributes = {
-					FCAEAB161C336BA70035CE84 = {
+					FC527FDA1C352B9E00A6FE91 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = FCAEAB121C336BA70035CE84 /* Build configuration list for PBXProject "memory_management_2" */;
+			buildConfigurationList = FC527FD61C352B9E00A6FE91 /* Build configuration list for PBXProject "ARC_circle_reference" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FCAEAB0E1C336BA70035CE84;
-			productRefGroup = FCAEAB181C336BA70035CE84 /* Products */;
+			mainGroup = FC527FD21C352B9E00A6FE91;
+			productRefGroup = FC527FDC1C352B9E00A6FE91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCAEAB161C336BA70035CE84 /* memory_management_2 */,
+				FC527FDA1C352B9E00A6FE91 /* ARC_circle_reference */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FCAEAB131C336BA70035CE84 /* Sources */ = {
+		FC527FD71C352B9E00A6FE91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCAEAB261C337B4A0035CE84 /* Person.m in Sources */,
-				FCAEAB231C337AB20035CE84 /* Book.m in Sources */,
-				FCAEAB1B1C336BA70035CE84 /* main.m in Sources */,
+				FC527FEA1C352BE400A6FE91 /* Dog.m in Sources */,
+				FC527FE71C352BAB00A6FE91 /* Person.m in Sources */,
+				FC527FDF1C352B9E00A6FE91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FCAEAB1C1C336BA70035CE84 /* Debug */ = {
+		FC527FE01C352B9E00A6FE91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -180,7 +180,7 @@
 			};
 			name = Debug;
 		};
-		FCAEAB1D1C336BA70035CE84 /* Release */ = {
+		FC527FE11C352B9E00A6FE91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,18 +216,16 @@
 			};
 			name = Release;
 		};
-		FCAEAB1F1C336BA70035CE84 /* Debug */ = {
+		FC527FE31C352B9E00A6FE91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FCAEAB201C336BA70035CE84 /* Release */ = {
+		FC527FE41C352B9E00A6FE91 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,25 +233,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCAEAB121C336BA70035CE84 /* Build configuration list for PBXProject "memory_management_2" */ = {
+		FC527FD61C352B9E00A6FE91 /* Build configuration list for PBXProject "ARC_circle_reference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCAEAB1C1C336BA70035CE84 /* Debug */,
-				FCAEAB1D1C336BA70035CE84 /* Release */,
+				FC527FE01C352B9E00A6FE91 /* Debug */,
+				FC527FE11C352B9E00A6FE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCAEAB1E1C336BA70035CE84 /* Build configuration list for PBXNativeTarget "memory_management_2" */ = {
+		FC527FE21C352B9E00A6FE91 /* Build configuration list for PBXNativeTarget "ARC_circle_reference" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCAEAB1F1C336BA70035CE84 /* Debug */,
-				FCAEAB201C336BA70035CE84 /* Release */,
+				FC527FE31C352B9E00A6FE91 /* Debug */,
+				FC527FE41C352B9E00A6FE91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FCAEAB0F1C336BA70035CE84 /* Project object */;
+	rootObject = FC527FD31C352B9E00A6FE91 /* Project object */;
 }

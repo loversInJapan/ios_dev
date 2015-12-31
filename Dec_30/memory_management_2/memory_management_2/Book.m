@@ -23,7 +23,6 @@
 - (void)dealloc
 {
     NSLog(@"Book instance is destroy");
-
     [super dealloc];
 }
 @end

@@ -31,8 +31,6 @@ int main(int argc, const char * argv[]) {
     NSString* s = @"Jack";// 这一句没用alloc，所以最后没有[s release];
     p.name = s;
     
-    [p release];
     //p = nil;
-    [b release];
     return 0;
 }
