@@ -11,11 +11,12 @@
 
 // SEL s1 = -test1
 // SEL s2 = -test2
-// 类中每个SEL数据对应一个方法的地址，SEL是一种数据类型
+// 类中每个SEL数据对应一个方法的地址，SEL是一种数据类型，类似于函数指针
 
 int main(int argc, const char * argv[]) {
     Person* p = [[Person alloc] init];
-    [p test1]; // 把test1包装成SEL类型的数据，然后再去类找相应的SEL，得到该方法的地址，然后调用该方法
+    SEL s1 = @selector(test1);
+    [p performSelector:s1]; // 上面两行把test1包装成SEL类型的数据，然后再去类找相应的SEL，得到该方法的地址，然后调用该方法
 
     [p performSelector:@selector(test2)];// @selector能将其他类型的数据转换成SEL类型
 
