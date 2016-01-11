@@ -41,6 +41,10 @@ int main(int argc, const char * argv[]) {
         Student* stu2 = [stu1 mutableCopy];
         [[stu2 name] appendString:@"--hehe"];
 
+        NSString* s = @"bigbang";
+        NSMutableArray* ms = [s copy];
+        NSLog(@"%@", ms);
+
         NSLog(@"%@", stu1);
         NSLog(@"%@", stu2);
     }
