@@ -8,7 +8,17 @@
 
 #import "ViewController.h"
 
+// 私有扩展，Xcode4.6开始，苹果建议不开放的属性和方法定义在私有扩展中。.h中只定义对外开放的属性和方法
+
+// IBAction本质上是个void只不过它允许链接而已
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet UITextField* num1;
+@property (nonatomic, weak) IBOutlet UITextField* num2;
+
+@property (nonatomic, weak) IBOutlet UILabel* resultLable;
+
+// - (IBAction)compute;
 
 @end
 
@@ -25,7 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)compute
+- (IBAction)compute
 {
     // NSLog(@"compute");
     // 取得界面上两个文本框的内容
