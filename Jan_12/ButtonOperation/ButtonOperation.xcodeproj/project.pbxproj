@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCDCF5901C44A97C00C10307 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCF58F1C44A97C00C10307 /* main.m */; };
+		FCDCF5931C44A97C00C10307 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCF5921C44A97C00C10307 /* AppDelegate.m */; };
+		FCDCF5961C44A97C00C10307 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCF5951C44A97C00C10307 /* ViewController.m */; };
+		FCDCF5991C44A97C00C10307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDCF5971C44A97C00C10307 /* Main.storyboard */; };
+		FCDCF59B1C44A97C00C10307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCDCF59A1C44A97C00C10307 /* Assets.xcassets */; };
+		FCDCF59E1C44A97C00C10307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCDCF59C1C44A97C00C10307 /* LaunchScreen.storyboard */; };
+		FCDCF5A91C44A97C00C10307 /* ButtonOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCF5A81C44A97C00C10307 /* ButtonOperationTests.m */; };
+		FCDCF5B41C44A97C00C10307 /* ButtonOperationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCF5B31C44A97C00C10307 /* ButtonOperationUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCDCF5A51C44A97C00C10307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCDCF5831C44A97C00C10307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCDCF58A1C44A97C00C10307;
+			remoteInfo = ButtonOperation;
+		};
+		FCDCF5B01C44A97C00C10307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCDCF5831C44A97C00C10307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCDCF58A1C44A97C00C10307;
+			remoteInfo = ButtonOperation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCDCF58B1C44A97C00C10307 /* ButtonOperation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonOperation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDCF58F1C44A97C00C10307 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FCDCF5911C44A97C00C10307 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCDCF5921C44A97C00C10307 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCDCF5941C44A97C00C10307 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FCDCF5951C44A97C00C10307 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCDCF5981C44A97C00C10307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCDCF59A1C44A97C00C10307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCDCF59D1C44A97C00C10307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCDCF59F1C44A97C00C10307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDCF5A41C44A97C00C10307 /* ButtonOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDCF5A81C44A97C00C10307 /* ButtonOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonOperationTests.m; sourceTree = "<group>"; };
+		FCDCF5AA1C44A97C00C10307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDCF5AF1C44A97C00C10307 /* ButtonOperationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonOperationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDCF5B31C44A97C00C10307 /* ButtonOperationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonOperationUITests.m; sourceTree = "<group>"; };
+		FCDCF5B51C44A97C00C10307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCDCF5881C44A97C00C10307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5A11C44A97C00C10307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5AC1C44A97C00C10307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCDCF5821C44A97C00C10307 = {
+			isa = PBXGroup;
+			children = (
+				FCDCF58D1C44A97C00C10307 /* ButtonOperation */,
+				FCDCF5A71C44A97C00C10307 /* ButtonOperationTests */,
+				FCDCF5B21C44A97C00C10307 /* ButtonOperationUITests */,
+				FCDCF58C1C44A97C00C10307 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCDCF58C1C44A97C00C10307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCF58B1C44A97C00C10307 /* ButtonOperation.app */,
+				FCDCF5A41C44A97C00C10307 /* ButtonOperationTests.xctest */,
+				FCDCF5AF1C44A97C00C10307 /* ButtonOperationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCDCF58D1C44A97C00C10307 /* ButtonOperation */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCF5911C44A97C00C10307 /* AppDelegate.h */,
+				FCDCF5921C44A97C00C10307 /* AppDelegate.m */,
+				FCDCF5941C44A97C00C10307 /* ViewController.h */,
+				FCDCF5951C44A97C00C10307 /* ViewController.m */,
+				FCDCF5971C44A97C00C10307 /* Main.storyboard */,
+				FCDCF59A1C44A97C00C10307 /* Assets.xcassets */,
+				FCDCF59C1C44A97C00C10307 /* LaunchScreen.storyboard */,
+				FCDCF59F1C44A97C00C10307 /* Info.plist */,
+				FCDCF58E1C44A97C00C10307 /* Supporting Files */,
+			);
+			path = ButtonOperation;
+			sourceTree = "<group>";
+		};
+		FCDCF58E1C44A97C00C10307 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCF58F1C44A97C00C10307 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCDCF5A71C44A97C00C10307 /* ButtonOperationTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCF5A81C44A97C00C10307 /* ButtonOperationTests.m */,
+				FCDCF5AA1C44A97C00C10307 /* Info.plist */,
+			);
+			path = ButtonOperationTests;
+			sourceTree = "<group>";
+		};
+		FCDCF5B21C44A97C00C10307 /* ButtonOperationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCF5B31C44A97C00C10307 /* ButtonOperationUITests.m */,
+				FCDCF5B51C44A97C00C10307 /* Info.plist */,
+			);
+			path = ButtonOperationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCDCF58A1C44A97C00C10307 /* ButtonOperation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDCF5B81C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperation" */;
+			buildPhases = (
+				FCDCF5871C44A97C00C10307 /* Sources */,
+				FCDCF5881C44A97C00C10307 /* Frameworks */,
+				FCDCF5891C44A97C00C10307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonOperation;
+			productName = ButtonOperation;
+			productReference = FCDCF58B1C44A97C00C10307 /* ButtonOperation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCDCF5A31C44A97C00C10307 /* ButtonOperationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDCF5BB1C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperationTests" */;
+			buildPhases = (
+				FCDCF5A01C44A97C00C10307 /* Sources */,
+				FCDCF5A11C44A97C00C10307 /* Frameworks */,
+				FCDCF5A21C44A97C00C10307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCDCF5A61C44A97C00C10307 /* PBXTargetDependency */,
+			);
+			name = ButtonOperationTests;
+			productName = ButtonOperationTests;
+			productReference = FCDCF5A41C44A97C00C10307 /* ButtonOperationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCDCF5AE1C44A97C00C10307 /* ButtonOperationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCDCF5BE1C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperationUITests" */;
+			buildPhases = (
+				FCDCF5AB1C44A97C00C10307 /* Sources */,
+				FCDCF5AC1C44A97C00C10307 /* Frameworks */,
+				FCDCF5AD1C44A97C00C10307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCDCF5B11C44A97C00C10307 /* PBXTargetDependency */,
+			);
+			name = ButtonOperationUITests;
+			productName = ButtonOperationUITests;
+			productReference = FCDCF5AF1C44A97C00C10307 /* ButtonOperationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCDCF5831C44A97C00C10307 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jon;
+				TargetAttributes = {
+					FCDCF58A1C44A97C00C10307 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FCDCF5A31C44A97C00C10307 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCDCF58A1C44A97C00C10307;
+					};
+					FCDCF5AE1C44A97C00C10307 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FCDCF58A1C44A97C00C10307;
+					};
+				};
+			};
+			buildConfigurationList = FCDCF5861C44A97C00C10307 /* Build configuration list for PBXProject "ButtonOperation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCDCF5821C44A97C00C10307;
+			productRefGroup = FCDCF58C1C44A97C00C10307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCDCF58A1C44A97C00C10307 /* ButtonOperation */,
+				FCDCF5A31C44A97C00C10307 /* ButtonOperationTests */,
+				FCDCF5AE1C44A97C00C10307 /* ButtonOperationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCDCF5891C44A97C00C10307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDCF59E1C44A97C00C10307 /* LaunchScreen.storyboard in Resources */,
+				FCDCF59B1C44A97C00C10307 /* Assets.xcassets in Resources */,
+				FCDCF5991C44A97C00C10307 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5A21C44A97C00C10307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5AD1C44A97C00C10307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCDCF5871C44A97C00C10307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDCF5961C44A97C00C10307 /* ViewController.m in Sources */,
+				FCDCF5931C44A97C00C10307 /* AppDelegate.m in Sources */,
+				FCDCF5901C44A97C00C10307 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5A01C44A97C00C10307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDCF5A91C44A97C00C10307 /* ButtonOperationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCDCF5AB1C44A97C00C10307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDCF5B41C44A97C00C10307 /* ButtonOperationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCDCF5A61C44A97C00C10307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCDCF58A1C44A97C00C10307 /* ButtonOperation */;
+			targetProxy = FCDCF5A51C44A97C00C10307 /* PBXContainerItemProxy */;
+		};
+		FCDCF5B11C44A97C00C10307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCDCF58A1C44A97C00C10307 /* ButtonOperation */;
+			targetProxy = FCDCF5B01C44A97C00C10307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCDCF5971C44A97C00C10307 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCDCF5981C44A97C00C10307 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCDCF59C1C44A97C00C10307 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCDCF59D1C44A97C00C10307 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCDCF5B61C44A97C00C10307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCDCF5B71C44A97C00C10307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCDCF5B91C44A97C00C10307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonOperation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FCDCF5BA1C44A97C00C10307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ButtonOperation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FCDCF5BC1C44A97C00C10307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonOperationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonOperation.app/ButtonOperation";
+			};
+			name = Debug;
+		};
+		FCDCF5BD1C44A97C00C10307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonOperationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonOperation.app/ButtonOperation";
+			};
+			name = Release;
+		};
+		FCDCF5BF1C44A97C00C10307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButtonOperationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButtonOperation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FCDCF5C01C44A97C00C10307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ButtonOperationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jon.ButtonOperationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ButtonOperation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCDCF5861C44A97C00C10307 /* Build configuration list for PBXProject "ButtonOperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDCF5B61C44A97C00C10307 /* Debug */,
+				FCDCF5B71C44A97C00C10307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCDCF5B81C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDCF5B91C44A97C00C10307 /* Debug */,
+				FCDCF5BA1C44A97C00C10307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCDCF5BB1C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDCF5BC1C44A97C00C10307 /* Debug */,
+				FCDCF5BD1C44A97C00C10307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FCDCF5BE1C44A97C00C10307 /* Build configuration list for PBXNativeTarget "ButtonOperationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCDCF5BF1C44A97C00C10307 /* Debug */,
+				FCDCF5C01C44A97C00C10307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCDCF5831C44A97C00C10307 /* Project object */;
+}
