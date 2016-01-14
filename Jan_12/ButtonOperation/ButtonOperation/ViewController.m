@@ -24,11 +24,8 @@ typedef enum {
 
 @end
 
-// 代码优化，利用move函数代替4个函数
-
-// 提示：可以通过center来改变位置
 @implementation ViewController
-
+// 提示：可以通过center来改变位置
 // 加载完成被调用
 // 代码创建按钮
 - (void)viewDidLoad
@@ -36,13 +33,12 @@ typedef enum {
     // 千万不要忘记调用父类的实现方法
     [super viewDidLoad];
 
-    // 创建按钮，并指定其位置
     // 使用alloc init方法实例化的按钮就是custom类型的，按钮的类型一旦指定就不能修改
     // 创建其他类型的按钮
     UIButton* bnt = [UIButton buttonWithType:UIButtonTypeInfoLight];
     bnt.center = CGPointMake(50, 50);
     [self.view addSubview:bnt];
-
+    // 创建按钮，并指定其位置
     UIButton* myButton = [[UIButton alloc] initWithFrame:CGRectMake(137, 200, 100, 100)];
     // 将创建出来的button赋值给iconButtom,即表示将各个操作按钮与此按钮链接，即可以移动，缩放此按钮
     self.iconButtom = myButton;
@@ -71,6 +67,7 @@ typedef enum {
 
 
 #pragma mark - button operation
+// 代码优化，利用move函数代替4个函数
 - (IBAction)move:(UIButton *)button
 {
     // 利用transform属性来改变按钮位置
