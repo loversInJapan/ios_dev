@@ -34,28 +34,33 @@
  */
 - (NSArray *)photoArray
 {
+    // bundle成为包，[NSBundle mainBundle]编译安装之后对应的程序包
     if (_photoArray == nil) {
-        NSDictionary* dict1 = @{@"name":@"biaoqingdi", @"text":@"biaodingdi1"};
-        NSDictionary* dict2 = @{@"name":@"bingli", @"text":@"bingli1"};
-        NSDictionary* dict3 = @{@"name":@"chiniupa", @"text":@"chiniupa1"};
-        NSDictionary* dict4 = @{@"name":@"danteng", @"text":@"danteng1"};
-        NSDictionary* dict5 = @{@"name":@"wangba", @"text":@"wangba"};
-
-        _photoArray = @[dict1,dict2,dict3,dict4,dict5];
+//        NSDictionary* dict1 = @{@"name":@"biaoqingdi", @"text":@"biaodingdi1"};
+//        NSDictionary* dict2 = @{@"name":@"bingli", @"text":@"bingli1"};
+//        NSDictionary* dict3 = @{@"name":@"chiniupa", @"text":@"chiniupa1"};
+//        NSDictionary* dict4 = @{@"name":@"danteng", @"text":@"danteng1"};
+//        NSDictionary* dict5 = @{@"name":@"wangba", @"text":@"wangba"};
+//
+//        _photoArray = @[dict1,dict2,dict3,dict4,dict5];
+        NSString* path = [[NSBundle mainBundle] pathForResource:@"PhotoArray" ofType:@"plist"];
+        NSLog(@"%@",path);
+        // OC中ContentsOfFile，通常需要完整的路径
+        _photoArray = [NSArray arrayWithContentsOfFile:path];
     }
     return _photoArray;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //图片序号展示
+    //1.图片序号展示
     _numberLabel = [[UILabel alloc] init];
     _numberLabel.frame = CGRectMake(0, 40, self.view.frame.size.width, 20);
     // _numberLabel.text = @"1 / 5";
     _numberLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:_numberLabel];
 
-    //图片加载
+    //2.图片加载
     CGFloat imageW = 200;
     CGFloat imageH = 200;
     CGFloat imageX = (self.view.frame.size.width - 200) * 0.5;
@@ -64,7 +69,7 @@
     //_iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
     [self.view addSubview:_iconImage];
 
-    // 添加左按钮
+    // 3.添加左按钮
     _leftButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
     CGFloat leftCenterX = _iconImage.frame.origin.x * 0.5;
     CGFloat leftCenterY = _iconImage.center.y;
@@ -77,7 +82,7 @@
     // 增加按钮监听
     [_leftButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
 
-    // 添加右边按钮
+    // 4.添加右边按钮
     _rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
     CGFloat rightCenterX = self.view.frame.size.width - leftCenterX;
     CGFloat rightCenterY = _iconImage.center.y;
@@ -89,11 +94,13 @@
     // 增加按钮监听
     [_rightButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
 
-    // 添加文字
+    // 5.添加文字
     _textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_iconImage.frame)+10, self.view.frame.size.width, 20)];
     //_textLabel.text = @"what a funny look";
     _textLabel.textAlignment = NSTextAlignmentCenter;
     _textLabel.textColor = [UIColor redColor];
+    // 需要Lable有足够的高度，这样设置就不限制行数。
+    _textLabel.numberOfLines = 0;
     [self.view addSubview:_textLabel];
 
     [self showPhoto];

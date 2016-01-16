@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCEC597E1C49FF3B00404D35 /* PhotoArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCEC597D1C49FF3B00404D35 /* PhotoArray.plist */; };
 		FCF9FD0A1C473234000F248B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FD091C473234000F248B /* main.m */; };
 		FCF9FD0D1C473234000F248B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FD0C1C473234000F248B /* AppDelegate.m */; };
 		FCF9FD101C473234000F248B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FD0F1C473234000F248B /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FCEC597D1C49FF3B00404D35 /* PhotoArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PhotoArray.plist; sourceTree = "<group>"; };
 		FCF9FD051C473234000F248B /* PhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF9FD091C473234000F248B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCF9FD0B1C473234000F248B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				FCF9FD0C1C473234000F248B /* AppDelegate.m */,
 				FCF9FD0E1C473234000F248B /* ViewController.h */,
 				FCF9FD0F1C473234000F248B /* ViewController.m */,
+				FCEC597D1C49FF3B00404D35 /* PhotoArray.plist */,
 				FCF9FD111C473234000F248B /* Main.storyboard */,
 				FCF9FD141C473234000F248B /* Assets.xcassets */,
 				FCF9FD161C473234000F248B /* LaunchScreen.storyboard */,
@@ -246,6 +249,7 @@
 				FCF9FD181C473234000F248B /* LaunchScreen.storyboard in Resources */,
 				FCF9FD151C473234000F248B /* Assets.xcassets in Resources */,
 				FCF9FD131C473234000F248B /* Main.storyboard in Resources */,
+				FCEC597E1C49FF3B00404D35 /* PhotoArray.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
