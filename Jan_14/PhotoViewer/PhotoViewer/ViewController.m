@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UILabel* textLabel;
 // 指示第几张图片
 @property (nonatomic, assign) int index;
+@property (nonatomic, strong) NSArray* photoArray;
 
 @end
 
@@ -26,8 +27,24 @@
  2.代码实现布局
  3.写代码
  */
-
 @implementation ViewController
+/* 
+ 懒加载（延迟加载）：通过getter实现
+ 效果：让对象在最需要的时候才创建
+ */
+- (NSArray *)photoArray
+{
+    if (_photoArray == nil) {
+        NSDictionary* dict1 = @{@"name":@"biaoqingdi", @"text":@"biaodingdi1"};
+        NSDictionary* dict2 = @{@"name":@"bingli", @"text":@"bingli1"};
+        NSDictionary* dict3 = @{@"name":@"chiniupa", @"text":@"chiniupa1"};
+        NSDictionary* dict4 = @{@"name":@"danteng", @"text":@"danteng1"};
+        NSDictionary* dict5 = @{@"name":@"wangba", @"text":@"wangba"};
+
+        _photoArray = @[dict1,dict2,dict3,dict4,dict5];
+    }
+    return _photoArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -80,6 +97,15 @@
     [self.view addSubview:_textLabel];
 
     [self showPhoto];
+    // 问题二，[self showPhoto];必须在放在相片数组加载之后，导致限制太大。因此使用OC的懒加载机制解决
+//    NSDictionary* dict1 = @{@"name":@"biaoqingdi", @"text":@"biaodingdi1"};
+//    NSDictionary* dict2 = @{@"name":@"bingli", @"text":@"bingli1"};
+//    NSDictionary* dict3 = @{@"name":@"chiniupa", @"text":@"chiniupa1"};
+//    NSDictionary* dict4 = @{@"name":@"danteng", @"text":@"danteng1"};
+//    NSDictionary* dict5 = @{@"name":@"wangba", @"text":@"wangba"};
+//
+//    self.photoArray = @[dict1,dict2,dict3,dict4,dict5];
+//
 }
 
 - (void)clickButton:(UIButton*) button
@@ -89,29 +115,41 @@
 }
 - (void)showPhoto
 {
-    self.numberLabel.text = [NSString stringWithFormat:@"%u/%u", self.index + 1, 5];
-    switch (self.index) {
-        case 0:
-            self.iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
-            self.textLabel.text = @"biaoqingdi";
-            break;
-        case 1:
-            self.iconImage.image = [UIImage imageNamed:@"bingli"];
-            self.textLabel.text = @"bingli";
-            break;
-        case 2:
-            self.iconImage.image = [UIImage imageNamed:@"chiniupa"];
-            self.textLabel.text = @"chiniupa";
-            break;
-        case 3:
-            self.iconImage.image = [UIImage imageNamed:@"danteng"];
-            self.textLabel.text = @"danteng";
-            break;
-        case 4:
-            self.iconImage.image = [UIImage imageNamed:@"wangba"];
-            self.textLabel.text = @"wangba";
-            break;
-    }
+    // 用数组和字典保存图片信息
+//    NSDictionary* dict1 = @{@"name":@"biaoqingdi", @"text":@"biaodingdi1"};
+//    NSDictionary* dict2 = @{@"name":@"bingli", @"text":@"bingli1"};
+//    NSDictionary* dict3 = @{@"name":@"chiniupa", @"text":@"chiniupa1"};
+//    NSDictionary* dict4 = @{@"name":@"danteng", @"text":@"danteng1"};
+//    NSDictionary* dict5 = @{@"name":@"wangba", @"text":@"wangba"};
+//
+//    NSArray* photoArray = @[dict1,dict2,dict3,dict4,dict5]; // 问题一，每次调用showPhoto函数都要重新创建并加载数组。因此将图片数组作为属性保存
+
+    self.iconImage.image = [UIImage imageNamed:self.photoArray[self.index][@"name"]];
+    self.textLabel.text = self.photoArray[self.index][@"text"];
+
+    self.numberLabel.text = [NSString stringWithFormat:@"%u/%lu", self.index + 1, (unsigned long)self.photoArray.count];
+//    switch (self.index) {
+//        case 0:
+//            self.iconImage.image = [UIImage imageNamed:@"biaoqingdi"];
+//            self.textLabel.text = @"biaoqingdi";
+//            break;
+//        case 1:
+//            self.iconImage.image = [UIImage imageNamed:@"bingli"];
+//            self.textLabel.text = @"bingli";
+//            break;
+//        case 2:
+//            self.iconImage.image = [UIImage imageNamed:@"chiniupa"];
+//            self.textLabel.text = @"chiniupa";
+//            break;
+//        case 3:
+//            self.iconImage.image = [UIImage imageNamed:@"danteng"];
+//            self.textLabel.text = @"danteng";
+//            break;
+//        case 4:
+//            self.iconImage.image = [UIImage imageNamed:@"wangba"];
+//            self.textLabel.text = @"wangba";
+//            break;
+//    }
     self.leftButton.enabled = (self.index != 0);
     self.rightButton.enabled = (self.index != 4);
 }

@@ -498,6 +498,7 @@
 				FCF9FD341C473234000F248B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCF9FD351C473234000F248B /* Build configuration list for PBXNativeTarget "PhotoViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				FCF9FD371C473234000F248B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCF9FD381C473234000F248B /* Build configuration list for PBXNativeTarget "PhotoViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +516,7 @@
 				FCF9FD3A1C473234000F248B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
