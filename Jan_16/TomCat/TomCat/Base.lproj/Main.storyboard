@@ -14,23 +14,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry_00" translatesAutoresizingMaskIntoConstraints="NO" id="6XK-TU-B5Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry_00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6XK-TU-B5Z">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-NW-XIX">
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xg-qt-Bly">
                                 <rect key="frame" x="20" y="20" width="60" height="60"/>
-                                <state key="normal" backgroundImage="eat"/>
+                                <state key="normal" title="cymbal" backgroundImage="cymbal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="319" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9S-H7-21n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="81" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-Nn-jON">
+                                <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                <state key="normal" title="drink" backgroundImage="drink">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="400" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWz-w6-ji7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nty-Xy-tdA">
+                                <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                <state key="normal" title="fart" backgroundImage="fart">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="319" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ZB-Bd-j4w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="81" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izu-lE-ONe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="knockout">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="78" width="197" height="162"/>
+                                </variation>
+                                <connections>
+                                    <action selector="tomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KJy-1x-F1q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogh-NW-XIX">
+                                <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                <state key="normal" title="eat" backgroundImage="eat">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="400" width="60" height="60"/>
                                 </variation>
                                 <connections>
-                                    <action selector="eatABird" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wbf-fm-Uva"/>
+                                    <action selector="tomAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W9k-3U-sj8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,12 +88,20 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6XK-TU-B5Z"/>
+                                <exclude reference="3Xg-qt-Bly"/>
+                                <exclude reference="VBa-Nn-jON"/>
+                                <exclude reference="Nty-Xy-tdA"/>
+                                <exclude reference="izu-lE-ONe"/>
                                 <exclude reference="ogh-NW-XIX"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="6XK-TU-B5Z"/>
+                                <include reference="3Xg-qt-Bly"/>
+                                <include reference="VBa-Nn-jON"/>
+                                <include reference="Nty-Xy-tdA"/>
+                                <include reference="izu-lE-ONe"/>
                                 <include reference="ogh-NW-XIX"/>
                             </mask>
                         </variation>
@@ -55,10 +113,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="379.5" y="349"/>
         </scene>
     </scenes>
     <resources>
-        <image name="angry_00" width="640" height="1024"/>
+        <image name="angry_00.jpg" width="640" height="1024"/>
+        <image name="cymbal" width="60" height="60"/>
+        <image name="drink" width="60" height="60"/>
         <image name="eat" width="60" height="60"/>
+        <image name="fart" width="60" height="60"/>
     </resources>
 </document>
