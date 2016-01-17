@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppInfo.h"
 
 @interface ViewController ()
 
@@ -28,7 +29,19 @@
 - (NSArray*)appList
 {
     if (_appList == nil) {
-        _appList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil]];
+        // _appList = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil]];
+        // 加载plist
+//        NSArray* array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"app.plist" ofType:nil]];
+//        // 创建临时数组，保存appinfo。
+//        NSMutableArray* marray = [NSMutableArray array];
+//
+//        for (NSDictionary* dict in array) { // 遍历数组，将字典转成模型
+//            // AppInfo* info = [[AppInfo alloc] initWithDictionary:dict];
+//
+//            AppInfo* info = [AppInfo appInfoWithDictionary:dict];
+//            [marray addObject:info];
+//        }
+        _appList = [AppInfo appList];
     }
     return _appList;
 }
@@ -48,14 +61,17 @@
         // app视图内部实现
         // 1.添加UIImageView
         UIImageView* icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, appView.frame.size.width, 65)];
-        icon.image = [UIImage imageNamed:[[self.appList objectAtIndex:i] objectForKey:@"icon"]];
+        AppInfo* appinfo = self.appList[i];
+        //icon.image = [UIImage imageNamed:appinfo.icon];
+        icon.image = appinfo.image; // 懒加载，松耦合。
+
         // 设置图像填充模式,等比例显示
         icon.contentMode = UIViewContentModeScaleAspectFill;
         [appView addSubview:icon];
 
         // 2.UILabel
         UILabel* desc = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(icon.frame)+5, appView.frame.size.width, 10)]; // 与UIImageView之间留出5个像素的距离
-        desc.text = [[self.appList objectAtIndex:i] objectForKey:@"name"];
+        desc.text = appinfo.name;//[[self.appList objectAtIndex:i] objectForKey:@"name"];
         desc.textAlignment = NSTextAlignmentCenter;
         desc.font = [UIFont systemFontOfSize:10];
         [appView addSubview:desc];

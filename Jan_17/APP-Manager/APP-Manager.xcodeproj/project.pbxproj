@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC3C47181C4B8E3C007776F0 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3C47171C4B8E3C007776F0 /* AppInfo.m */; };
 		FC8300B11C4B5EF700ED460F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8300B01C4B5EF700ED460F /* main.m */; };
 		FC8300B41C4B5EF700ED460F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8300B31C4B5EF700ED460F /* AppDelegate.m */; };
 		FC8300B71C4B5EF700ED460F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8300B61C4B5EF700ED460F /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC3C47161C4B8E3C007776F0 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		FC3C47171C4B8E3C007776F0 /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		FC8300AC1C4B5EF700ED460F /* APP-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APP-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8300B01C4B5EF700ED460F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC8300B21C4B5EF700ED460F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 				FC8300B31C4B5EF700ED460F /* AppDelegate.m */,
 				FC8300B51C4B5EF700ED460F /* ViewController.h */,
 				FC8300B61C4B5EF700ED460F /* ViewController.m */,
+				FC3C47161C4B8E3C007776F0 /* AppInfo.h */,
+				FC3C47171C4B8E3C007776F0 /* AppInfo.m */,
 				FC8300B81C4B5EF700ED460F /* Main.storyboard */,
 				FC8300BB1C4B5EF700ED460F /* Assets.xcassets */,
 				FC8300BD1C4B5EF700ED460F /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8300B71C4B5EF700ED460F /* ViewController.m in Sources */,
+				FC3C47181C4B8E3C007776F0 /* AppInfo.m in Sources */,
 				FC8300B41C4B5EF700ED460F /* AppDelegate.m in Sources */,
 				FC8300B11C4B5EF700ED460F /* main.m in Sources */,
 			);
@@ -302,6 +308,7 @@
 				FC8300C51C4B5EF700ED460F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
