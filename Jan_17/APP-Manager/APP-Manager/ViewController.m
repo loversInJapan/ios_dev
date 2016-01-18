@@ -6,6 +6,11 @@
 //  Copyright © 2016 Jon. All rights reserved.
 //
 
+/**
+ 1）Storyboard：重量级，能够描述一个应用程序所有的界面
+ 2）XIB：轻量级，在Xcode4.0之前，是主要的图形界面搭建工具，现在仍然是主流的界面开发技术，适合开发小块的自定义视图
+ */
+
 #import "ViewController.h"
 #import "AppInfo.h"
 // 画九宫格界面
@@ -48,6 +53,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // XIB代码测试
+
     int marginX = (self.view.frame.size.width - kRowCount*kViewW) / (kRowCount + 1);
     for (int i = 0; i < kAPPAmount; ++i) {
         int row = i / kRowCount; // 第几行

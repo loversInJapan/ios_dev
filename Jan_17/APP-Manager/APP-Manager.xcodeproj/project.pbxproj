@@ -15,6 +15,7 @@
 		FC8300BC1C4B5EF700ED460F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8300BB1C4B5EF700ED460F /* Assets.xcassets */; };
 		FC8300BF1C4B5EF700ED460F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8300BD1C4B5EF700ED460F /* LaunchScreen.storyboard */; };
 		FC8300C71C4B6DEF00ED460F /* app.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC8300C61C4B6DEF00ED460F /* app.plist */; };
+		FCEACDE51C4CAFEE00CC05E5 /* AppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEACDE41C4CAFEE00CC05E5 /* AppView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FC8300BE1C4B5EF700ED460F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8300C01C4B5EF700ED460F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8300C61C4B6DEF00ED460F /* app.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = app.plist; sourceTree = "<group>"; };
+		FCEACDE41C4CAFEE00CC05E5 /* AppView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				FC8300B31C4B5EF700ED460F /* AppDelegate.m */,
 				FC8300B51C4B5EF700ED460F /* ViewController.h */,
 				FC8300B61C4B5EF700ED460F /* ViewController.m */,
+				FCEACDE41C4CAFEE00CC05E5 /* AppView.xib */,
 				FC3C47161C4B8E3C007776F0 /* AppInfo.h */,
 				FC3C47171C4B8E3C007776F0 /* AppInfo.m */,
 				FC8300B81C4B5EF700ED460F /* Main.storyboard */,
@@ -147,6 +150,7 @@
 				FC8300C71C4B6DEF00ED460F /* app.plist in Resources */,
 				FC8300BF1C4B5EF700ED460F /* LaunchScreen.storyboard in Resources */,
 				FC8300BC1C4B5EF700ED460F /* Assets.xcassets in Resources */,
+				FCEACDE51C4CAFEE00CC05E5 /* AppView.xib in Resources */,
 				FC8300BA1C4B5EF700ED460F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
