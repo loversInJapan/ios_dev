@@ -36,13 +36,36 @@
     [self.imageView sizeToFit];
     // 告诉scrollview内部内容的实际大小
     self.minionScroll.contentSize = image.size;
-
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.minionScroll.contentSize = CGSizeMake(892, 632);
+    // 设置图像
     self.image = [UIImage imageNamed:@"minion"];
+    // 设置边距
+    self.minionScroll.contentInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    // 不显示垂直和水平滚动表示
+    self.minionScroll.showsHorizontalScrollIndicator = NO;
+    self.minionScroll.showsVerticalScrollIndicator = NO;
+    // 取消弹簧效果
+    self.minionScroll.bounces = NO;
+    // 设置offset
+    self.minionScroll.contentOffset = CGPointMake(-100, -200);
+
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    button.center = self.view.center;
+    // 添加到scrollview中，按钮会随图片scrollview而动
+    [self.view addSubview:button];
+}
+
+- (void)click
+{
+    CGPoint contentOffset = self.minionScroll.contentOffset;
+    contentOffset.x += 20;
+    contentOffset.y += 20;
+    self.minionScroll.contentOffset = contentOffset;
 }
 
 - (void)didReceiveMemoryWarning {
