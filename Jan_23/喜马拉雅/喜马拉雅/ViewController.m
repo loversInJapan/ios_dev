@@ -11,7 +11,8 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIButton *showMyself;
+@property (weak, nonatomic) IBOutlet UIButton *showButton;
+@property (weak, nonatomic) IBOutlet UIButton *host;
 
 @end
 
@@ -30,7 +31,10 @@
     // 设置边距
     self.scrollView.contentInset = UIEdgeInsetsMake(59, 0, 0, 0);
     // 设置contentSize
-    CGFloat h = self.scrollView.frame.size.height + 85 + 49;
+//    CGFloat h = self.scrollView.frame.size.height + 85 + 49;
+    CGFloat h = self.showButton.frame.origin.y;
+    CGFloat h1 = self.host.frame.origin.y;
+
     self.scrollView.contentSize = CGSizeMake(0, h);
 }
 - (void)viewDidLoad {

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *minionScroll;
 @property (strong, nonatomic) UIImageView* imageView;
 
@@ -51,13 +51,31 @@
     // 取消弹簧效果
     self.minionScroll.bounces = NO;
     // 设置offset
-    self.minionScroll.contentOffset = CGPointMake(-100, -200);
+    self.minionScroll.contentOffset = CGPointMake(0,0);
+
+
+    /**
+     实现两点触屏的图片放大和缩小
+     1）设置代理
+     2）指定最大／最小缩放比例
+     */
+    self.minionScroll.delegate = self;
+    // 设置最大／最小缩放比例
+    self.minionScroll.maximumZoomScale = 2.0;
+    self.minionScroll.minimumZoomScale = 0.2;
 
     UIButton* button = [UIButton buttonWithType:UIButtonTypeContactAdd];
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     button.center = self.view.center;
     // 添加到scrollview中，按钮会随图片scrollview而动
     [self.view addSubview:button];
+}
+
+#pragma mark - UIScrollView的代理方法
+// 代理方法的返回值就是告诉scrollView要缩放的视图是谁，具体的缩放实现由scrollview来完成
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imageView;
 }
 
 - (void)click

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cz9-YY-mjI">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="倒计时" id="XZS-6O-b8A">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="pqr-nL-BWI"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGO-af-Pd1">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="Uet-Uk-thj">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="1al-YH-V9V">
+                                            <connections>
+                                                <action selector="play" destination="BYZ-38-t0r" id="dlL-3e-Xh9"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="pause" id="gFz-ZZ-Lmz">
+                                            <connections>
+                                                <action selector="pause" destination="BYZ-38-t0r" id="3zx-ko-I7l"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uE-2E-dCN">
+                                <rect key="frame" x="0.0" y="283" width="600" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s4o-ZL-i30">
+                                <rect key="frame" x="133" y="109" width="335" height="89"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="tSt-G5-4b8"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cz9-YY-mjI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bs6-Hv-pp3"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="trailing" secondItem="AGO-af-Pd1" secondAttribute="trailing" id="Eve-Nb-O8L"/>
+                            <constraint firstItem="AGO-af-Pd1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="FUO-F7-o6D"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="283" id="Jrt-D9-06r"/>
+                            <constraint firstItem="s4o-ZL-i30" firstAttribute="centerX" secondItem="cz9-YY-mjI" secondAttribute="centerX" id="KIf-YY-9tj"/>
+                            <constraint firstItem="s4o-ZL-i30" firstAttribute="top" secondItem="cz9-YY-mjI" secondAttribute="bottom" constant="45" id="N9C-EP-Hp6"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="leading" secondItem="AGO-af-Pd1" secondAttribute="leading" id="WZ8-RU-qeN"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="trailing" secondItem="cz9-YY-mjI" secondAttribute="trailing" id="Yq9-Yy-zNi"/>
+                            <constraint firstItem="cz9-YY-mjI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0R-b3-EhR"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="top" secondItem="s4o-ZL-i30" secondAttribute="bottom" constant="85" id="mQX-OP-amz"/>
+                            <constraint firstAttribute="trailing" secondItem="cz9-YY-mjI" secondAttribute="trailing" id="szY-jM-ojF"/>
+                            <constraint firstItem="1uE-2E-dCN" firstAttribute="leading" secondItem="cz9-YY-mjI" secondAttribute="leading" id="v87-OL-1Gc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="1uE-2E-dCN" id="BBu-1s-hZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="307"/>
+        </scene>
+    </scenes>
+</document>
