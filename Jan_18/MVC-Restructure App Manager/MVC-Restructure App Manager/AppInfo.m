@@ -29,7 +29,7 @@
     return self;
 }
 
-+ (instancetype)appInfoWithDictionaru:(NSDictionary *)dict
++ (instancetype)appInfoWithDictionary:(NSDictionary *)dict
 {
     return [[self alloc] initWithDictionary:dict];
 }
@@ -40,7 +40,7 @@
 
     NSMutableArray* mAppList = [NSMutableArray array];
     for (NSDictionary* dict in appList) {
-        [mAppList addObject:[self appInfoWithDictionaru:dict]];
+        [mAppList addObject:[self appInfoWithDictionary:dict]];
     }
     
     return mAppList;

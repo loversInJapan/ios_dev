@@ -23,9 +23,9 @@
 
 - (UIScrollView *)scrollViewOfImages
 {
-    CGFloat x = (self.view.bounds.size.width - kImageW) * 0.5;
 //    CGFloat y = (self.view.bounds.size.height - kImageH) * 0.5;
     if (_scrollViewOfImages == nil) {
+        CGFloat x = (self.view.bounds.size.width - kImageW) * 0.5;
         _scrollViewOfImages = [[UIScrollView alloc] initWithFrame:CGRectMake(x, 50, kImageW, kImageH)];
         // 取消弹簧效果
         _scrollViewOfImages.bounces = NO;
@@ -111,7 +111,7 @@
         [self.scrollViewOfImages addSubview:imageView];
     }
     self.pageController.currentPage = 0;
-    [self pageChanged:self.pageController];
+//    [self pageChanged:self.pageController];
     [self startTimer];
 }
 

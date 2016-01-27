@@ -17,7 +17,7 @@
 
 - (instancetype)initWithDictionary:(NSDictionary*)dict;
 
-+ (instancetype)appInfoWithDictionaru:(NSDictionary*)dict;
++ (instancetype)appInfoWithDictionary:(NSDictionary*)dict;
 
 + (NSArray*)appList;
 

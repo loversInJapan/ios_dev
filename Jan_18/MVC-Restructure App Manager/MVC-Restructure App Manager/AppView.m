@@ -45,10 +45,7 @@
     showDownloadInfo.numberOfLines = 0; // 不限行数，但需要高度够高
     showDownloadInfo.textAlignment = NSTextAlignmentCenter;
     showDownloadInfo.font = [UIFont systemFontOfSize:14];
-
-    // 点击后应该让按钮无效。
-    button.enabled = NO;
-
+    
     // 设置动画让label渐近渐出, 采用了嵌套动画
     showDownloadInfo.alpha = 0.0; //先将透明度设为0
     [UIView animateWithDuration:1.0f animations:^{
@@ -62,6 +59,8 @@
     }];
 
     [self.superview addSubview:showDownloadInfo];
+    // 点击后应该让按钮无效。
+    button.enabled = NO;
 }
 
 + (instancetype)appView
