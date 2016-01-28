@@ -13,6 +13,10 @@
 		FCE6A4F31C5A5E7C0088F5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE6A4F11C5A5E7C0088F5C9 /* Main.storyboard */; };
 		FCE6A4F51C5A5E7C0088F5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE6A4F41C5A5E7C0088F5C9 /* Assets.xcassets */; };
 		FCE6A4F81C5A5E7C0088F5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE6A4F61C5A5E7C0088F5C9 /* LaunchScreen.storyboard */; };
+		FCE6A5001C5A5F320088F5C9 /* cars_total.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCE6A4FF1C5A5F320088F5C9 /* cars_total.plist */; };
+		FCE6A5031C5A6C840088F5C9 /* carsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6A5021C5A6C840088F5C9 /* carsGroup.m */; };
+		FCE6A5061C5A6CCC0088F5C9 /* car.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6A5051C5A6CCC0088F5C9 /* car.m */; };
+		FCE6A5091C5A78B40088F5C9 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE6A5081C5A78B40088F5C9 /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		FCE6A4F41C5A5E7C0088F5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE6A4F71C5A5E7C0088F5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCE6A4F91C5A5E7C0088F5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCE6A4FF1C5A5F320088F5C9 /* cars_total.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_total.plist; sourceTree = "<group>"; };
+		FCE6A5011C5A6C840088F5C9 /* carsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carsGroup.h; sourceTree = "<group>"; };
+		FCE6A5021C5A6C840088F5C9 /* carsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carsGroup.m; sourceTree = "<group>"; };
+		FCE6A5041C5A6CCC0088F5C9 /* car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = car.h; sourceTree = "<group>"; };
+		FCE6A5051C5A6CCC0088F5C9 /* car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = car.m; sourceTree = "<group>"; };
+		FCE6A5071C5A78B40088F5C9 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		FCE6A5081C5A78B40088F5C9 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,12 @@
 				FCE6A4EC1C5A5E7C0088F5C9 /* AppDelegate.m */,
 				FCE6A4EE1C5A5E7C0088F5C9 /* ViewController.h */,
 				FCE6A4EF1C5A5E7C0088F5C9 /* ViewController.m */,
+				FCE6A5011C5A6C840088F5C9 /* carsGroup.h */,
+				FCE6A5021C5A6C840088F5C9 /* carsGroup.m */,
+				FCE6A5041C5A6CCC0088F5C9 /* car.h */,
+				FCE6A5051C5A6CCC0088F5C9 /* car.m */,
+				FCE6A5071C5A78B40088F5C9 /* NSArray+Log.h */,
+				FCE6A5081C5A78B40088F5C9 /* NSArray+Log.m */,
 				FCE6A4F11C5A5E7C0088F5C9 /* Main.storyboard */,
 				FCE6A4F41C5A5E7C0088F5C9 /* Assets.xcassets */,
 				FCE6A4F61C5A5E7C0088F5C9 /* LaunchScreen.storyboard */,
@@ -75,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE6A4E91C5A5E7C0088F5C9 /* main.m */,
+				FCE6A4FF1C5A5F320088F5C9 /* cars_total.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +156,7 @@
 			files = (
 				FCE6A4F81C5A5E7C0088F5C9 /* LaunchScreen.storyboard in Resources */,
 				FCE6A4F51C5A5E7C0088F5C9 /* Assets.xcassets in Resources */,
+				FCE6A5001C5A5F320088F5C9 /* cars_total.plist in Resources */,
 				FCE6A4F31C5A5E7C0088F5C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCE6A5061C5A6CCC0088F5C9 /* car.m in Sources */,
+				FCE6A5031C5A6C840088F5C9 /* carsGroup.m in Sources */,
 				FCE6A4F01C5A5E7C0088F5C9 /* ViewController.m in Sources */,
+				FCE6A5091C5A78B40088F5C9 /* NSArray+Log.m in Sources */,
 				FCE6A4ED1C5A5E7C0088F5C9 /* AppDelegate.m in Sources */,
 				FCE6A4EA1C5A5E7C0088F5C9 /* main.m in Sources */,
 			);
