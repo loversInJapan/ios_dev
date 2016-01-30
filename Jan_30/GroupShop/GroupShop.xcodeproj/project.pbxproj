@@ -17,6 +17,8 @@
 		FCC0DB961C5CB31B00BC37A8 /* GroupShopInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB951C5CB31B00BC37A8 /* GroupShopInfo.m */; };
 		FCC0DB981C5CBBF500BC37A8 /* GroupShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC0DB971C5CBBF500BC37A8 /* GroupShopCell.xib */; };
 		FCC0DB9B1C5CBEC600BC37A8 /* GroupShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB9A1C5CBEC600BC37A8 /* GroupShopCell.m */; };
+		FCC0DBA71C5CDB3000BC37A8 /* GroupShopFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DBA61C5CDB3000BC37A8 /* GroupShopFooterView.m */; };
+		FCC0DBA91C5CDB4200BC37A8 /* GroupShopFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC0DBA81C5CDB4200BC37A8 /* GroupShopFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		FCC0DB971C5CBBF500BC37A8 /* GroupShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupShopCell.xib; sourceTree = "<group>"; };
 		FCC0DB991C5CBEC600BC37A8 /* GroupShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupShopCell.h; sourceTree = "<group>"; };
 		FCC0DB9A1C5CBEC600BC37A8 /* GroupShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupShopCell.m; sourceTree = "<group>"; };
+		FCC0DBA51C5CDB3000BC37A8 /* GroupShopFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupShopFooterView.h; sourceTree = "<group>"; };
+		FCC0DBA61C5CDB3000BC37A8 /* GroupShopFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupShopFooterView.m; sourceTree = "<group>"; };
+		FCC0DBA81C5CDB4200BC37A8 /* GroupShopFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupShopFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,19 +73,10 @@
 		FCC0DB7A1C5CB26400BC37A8 /* GroupShop */ = {
 			isa = PBXGroup;
 			children = (
-				FCC0DB7E1C5CB26400BC37A8 /* AppDelegate.h */,
-				FCC0DB7F1C5CB26400BC37A8 /* AppDelegate.m */,
-				FCC0DB811C5CB26400BC37A8 /* ViewController.h */,
-				FCC0DB821C5CB26400BC37A8 /* ViewController.m */,
-				FCC0DB941C5CB31B00BC37A8 /* GroupShopInfo.h */,
-				FCC0DB951C5CB31B00BC37A8 /* GroupShopInfo.m */,
-				FCC0DB991C5CBEC600BC37A8 /* GroupShopCell.h */,
-				FCC0DB9A1C5CBEC600BC37A8 /* GroupShopCell.m */,
-				FCC0DB971C5CBBF500BC37A8 /* GroupShopCell.xib */,
-				FCC0DB841C5CB26400BC37A8 /* Main.storyboard */,
-				FCC0DB871C5CB26400BC37A8 /* Assets.xcassets */,
-				FCC0DB891C5CB26400BC37A8 /* LaunchScreen.storyboard */,
-				FCC0DB8C1C5CB26400BC37A8 /* Info.plist */,
+				FCC0DBA11C5CDA4400BC37A8 /* others */,
+				FCC0DBA21C5CDA5A00BC37A8 /* C */,
+				FCC0DBA31C5CDA6D00BC37A8 /* M */,
+				FCC0DBA41C5CDA9100BC37A8 /* V */,
 				FCC0DB7B1C5CB26400BC37A8 /* Supporting Files */,
 			);
 			path = GroupShop;
@@ -89,10 +85,54 @@
 		FCC0DB7B1C5CB26400BC37A8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCC0DB841C5CB26400BC37A8 /* Main.storyboard */,
+				FCC0DB871C5CB26400BC37A8 /* Assets.xcassets */,
+				FCC0DB891C5CB26400BC37A8 /* LaunchScreen.storyboard */,
+				FCC0DB8C1C5CB26400BC37A8 /* Info.plist */,
 				FCC0DB921C5CB27D00BC37A8 /* tgs.plist */,
 				FCC0DB7C1C5CB26400BC37A8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCC0DBA11C5CDA4400BC37A8 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0DB7E1C5CB26400BC37A8 /* AppDelegate.h */,
+				FCC0DB7F1C5CB26400BC37A8 /* AppDelegate.m */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
+		FCC0DBA21C5CDA5A00BC37A8 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0DB811C5CB26400BC37A8 /* ViewController.h */,
+				FCC0DB821C5CB26400BC37A8 /* ViewController.m */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		FCC0DBA31C5CDA6D00BC37A8 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0DB941C5CB31B00BC37A8 /* GroupShopInfo.h */,
+				FCC0DB951C5CB31B00BC37A8 /* GroupShopInfo.m */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		FCC0DBA41C5CDA9100BC37A8 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0DB991C5CBEC600BC37A8 /* GroupShopCell.h */,
+				FCC0DB9A1C5CBEC600BC37A8 /* GroupShopCell.m */,
+				FCC0DB971C5CBBF500BC37A8 /* GroupShopCell.xib */,
+				FCC0DBA51C5CDB3000BC37A8 /* GroupShopFooterView.h */,
+				FCC0DBA61C5CDB3000BC37A8 /* GroupShopFooterView.m */,
+				FCC0DBA81C5CDB4200BC37A8 /* GroupShopFooterView.xib */,
+			);
+			name = V;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCC0DB8B1C5CB26400BC37A8 /* LaunchScreen.storyboard in Resources */,
+				FCC0DBA91C5CDB4200BC37A8 /* GroupShopFooterView.xib in Resources */,
 				FCC0DB931C5CB27D00BC37A8 /* tgs.plist in Resources */,
 				FCC0DB881C5CB26400BC37A8 /* Assets.xcassets in Resources */,
 				FCC0DB861C5CB26400BC37A8 /* Main.storyboard in Resources */,
@@ -170,6 +211,7 @@
 				FCC0DB831C5CB26400BC37A8 /* ViewController.m in Sources */,
 				FCC0DB961C5CB31B00BC37A8 /* GroupShopInfo.m in Sources */,
 				FCC0DB9B1C5CBEC600BC37A8 /* GroupShopCell.m in Sources */,
+				FCC0DBA71C5CDB3000BC37A8 /* GroupShopFooterView.m in Sources */,
 				FCC0DB801C5CB26400BC37A8 /* AppDelegate.m in Sources */,
 				FCC0DB7D1C5CB26400BC37A8 /* main.m in Sources */,
 			);

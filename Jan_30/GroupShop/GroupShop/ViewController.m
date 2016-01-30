@@ -28,6 +28,8 @@
     self.tableView.rowHeight = 100;
     // 设置边界宽度
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    // 从XIB加载footerView
+    self.tableView.tableFooterView = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopFooterView" owner:nil options:nil] lastObject];
 }
 
 #pragma mark - dataSource methods
