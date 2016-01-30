@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GroupShopInfo;
 
 @interface GroupShopCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
-@property (weak, nonatomic) IBOutlet UILabel *buyCountLabel;
+// 团购信息模型
+@property (strong, nonatomic) GroupShopInfo* info;
 
++ (GroupShopCell*)cellWithTableView:(UITableView*)tableView;
 @end

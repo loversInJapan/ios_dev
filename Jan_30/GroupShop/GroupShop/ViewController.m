@@ -38,24 +38,27 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString* ID = @"Cell";
+//    static NSString* ID = @"Cell";
+//
+////    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//    GroupShopCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
+//
+//    if (cell == nil) {
+//        NSLog(@"load XIB");
+//        cell = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopCell" owner:nil options:nil] lastObject];
+//    }
 
-//    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    GroupShopCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    // 传入tableView返回一个创建好的cell
+    GroupShopCell* cell = [GroupShopCell cellWithTableView:tableView];
 
-    if (cell == nil) {
-        NSLog(@"load XIB");
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopCell" owner:nil options:nil] lastObject];
-    }
+    // 将cell封装，让其包含一个cell信息模型的对象，然后把每个cell的信息传给它，就能帮我们设置好所有的属性
+    cell.info = self.groupShopList[indexPath.row];
 
-    GroupShopInfo* group = self.groupShopList[indexPath.row];
+    
 //    cell.textLabel.text = group.title;
 //    cell.imageView.image = [UIImage imageNamed:group.icon];
 //    cell.detailTextLabel.text = [NSString stringWithFormat:@"💲%@          %@人购买", group.price, group.buyCount];
-    cell.iconView.image = [UIImage imageNamed:group.icon];
-    cell.titleLabel.text = group.title;
-    cell.priceLabel.text = [NSString stringWithFormat:@"💲%@", group.price];
-    cell.buyCountLabel.text = [NSString stringWithFormat:@"已有%@人购买", group.buyCount];
+    
     return cell;
 }
 @end
