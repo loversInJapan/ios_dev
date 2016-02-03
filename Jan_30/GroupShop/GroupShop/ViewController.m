@@ -9,9 +9,12 @@
 #import "ViewController.h"
 #import "GroupShopInfo.h"
 #import "GroupShopCell.h"
+#import "GroupShopFooterView.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, GroupShopFooterViewDelegate>
+
 @property (strong, nonatomic) NSArray* groupShopList;
+
 @end
 
 @implementation ViewController
@@ -29,7 +32,15 @@
     // 设置边界宽度
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     // 从XIB加载footerView
-    self.tableView.tableFooterView = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopFooterView" owner:nil options:nil] lastObject];
+    GroupShopFooterView* footer = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopFooterView" owner:nil options:nil] lastObject];
+    // 并设置代理
+    footer.delegate = self;
+    self.tableView.tableFooterView = footer;
+}
+#pragma mark - footerView delegate method
+- (void)loadMoreDidClickDownloadButton:(GroupShopFooterView *)view
+{
+    NSLog(@"正在努力加载中....");
 }
 
 #pragma mark - dataSource methods

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GroupShopFooterView;
+
+@protocol GroupShopFooterViewDelegate <NSObject>
+
+- (void)loadMoreDidClickDownloadButton:(GroupShopFooterView*)view;
+
+@end
 
 @interface GroupShopFooterView : UIView
-
+@property (nonatomic, weak) id <GroupShopFooterViewDelegate> delegate;
 @end
