@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC9C82C41C632BB200C8A712 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9C82C31C632BB200C8A712 /* HeaderView.xib */; };
 		FCC0DB7D1C5CB26400BC37A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB7C1C5CB26400BC37A8 /* main.m */; };
 		FCC0DB801C5CB26400BC37A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB7F1C5CB26400BC37A8 /* AppDelegate.m */; };
 		FCC0DB831C5CB26400BC37A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB821C5CB26400BC37A8 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC9C82C31C632BB200C8A712 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		FCC0DB781C5CB26400BC37A8 /* GroupShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC0DB7C1C5CB26400BC37A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCC0DB7E1C5CB26400BC37A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				FCC0DBA51C5CDB3000BC37A8 /* GroupShopFooterView.h */,
 				FCC0DBA61C5CDB3000BC37A8 /* GroupShopFooterView.m */,
 				FCC0DBA81C5CDB4200BC37A8 /* GroupShopFooterView.xib */,
+				FC9C82C31C632BB200C8A712 /* HeaderView.xib */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				FCC0DB881C5CB26400BC37A8 /* Assets.xcassets in Resources */,
 				FCC0DB861C5CB26400BC37A8 /* Main.storyboard in Resources */,
 				FCC0DB981C5CBBF500BC37A8 /* GroupShopCell.xib in Resources */,
+				FC9C82C41C632BB200C8A712 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +364,7 @@
 				FCC0DB911C5CB26400BC37A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

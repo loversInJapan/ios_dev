@@ -63,6 +63,11 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+    if (selected) {
+        self.contentView.backgroundColor = [UIColor redColor];
+    }else{
+        self.contentView.backgroundColor = [UIColor greenColor];
+    }
 }
 
 @end

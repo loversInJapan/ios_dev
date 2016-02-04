@@ -16,5 +16,5 @@
 
 - (instancetype)initWithDict:(NSDictionary*) dict;
 + (instancetype)groupShopWithDict:(NSDictionary*) dict;
-+ (NSArray*)groupShopList;
++ (NSMutableArray*)groupShopList;
 @end

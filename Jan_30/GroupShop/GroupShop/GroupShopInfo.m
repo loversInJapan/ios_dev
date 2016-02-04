@@ -23,7 +23,7 @@
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)groupShopList
++ (NSMutableArray *)groupShopList
 {
     NSArray* array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"tgs.plist" ofType:nil]];
     NSMutableArray* arrayM = [NSMutableArray array];

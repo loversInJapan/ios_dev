@@ -36,4 +36,8 @@
     });
 }
 
++ (instancetype)footerView
+{
+    return [[[NSBundle mainBundle] loadNibNamed:@"GroupShopFooterView" owner:nil options:nil] lastObject];
+}
 @end
