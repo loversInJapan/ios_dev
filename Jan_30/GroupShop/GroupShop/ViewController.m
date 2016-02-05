@@ -45,11 +45,17 @@
 - (void)loadMoreDidClickDownloadButton:(GroupShopFooterView *)view
 {
     NSLog(@"正在努力加载中....");
-    NSDictionary* dict = @{@"title":@"哈哈哈哈", @"icon":@"2010e3a0c7f88c3f5f5803bf66addd93.png", @"price":@"101.1", @"buyCount":@"999"};
-    [self.groupShopList addObject:[GroupShopInfo groupShopWithDict:dict]];
-    // 可以用［self.tableView reloadData],但这样做将重新加载全部的数据，但是我们并不需要。只需要执行插入一条新数据即可
-    NSIndexPath* path = [NSIndexPath indexPathForRow:(self.groupShopList.count - 1) inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSDictionary* dict = @{@"title":@"哈哈哈哈", @"icon":@"2010e3a0c7f88c3f5f5803bf66addd93.png", @"price":@"101.1", @"buyCount":@"999"};
+        [self.groupShopList addObject:[GroupShopInfo groupShopWithDict:dict]];
+        // 可以用［self.tableView reloadData],但这样做将重新加载全部的数据，但是我们并不需要。只需要执行插入一条新数据即可
+        NSIndexPath* path = [NSIndexPath indexPathForRow:(self.groupShopList.count - 1) inSection:0];
+        [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationMiddle];
+        //    - (void)scrollToRowAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UITableViewScrollPosition)scrollPosition animated:(BOOL)animated;
+        // 将视图划到底部
+        [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    });
+    [view endRefresh];
 }
 
 #pragma mark - dataSource methods

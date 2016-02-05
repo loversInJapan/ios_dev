@@ -56,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC46FD011C64A49700868B40 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FCC0DBA11C5CDA4400BC37A8 /* others */,
+				FCC0DBA21C5CDA5A00BC37A8 /* C */,
+				FCC0DBA31C5CDA6D00BC37A8 /* M */,
+				FCC0DBA41C5CDA9100BC37A8 /* V */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		FCC0DB6F1C5CB26400BC37A8 = {
 			isa = PBXGroup;
 			children = (
@@ -75,10 +86,7 @@
 		FCC0DB7A1C5CB26400BC37A8 /* GroupShop */ = {
 			isa = PBXGroup;
 			children = (
-				FCC0DBA11C5CDA4400BC37A8 /* others */,
-				FCC0DBA21C5CDA5A00BC37A8 /* C */,
-				FCC0DBA31C5CDA6D00BC37A8 /* M */,
-				FCC0DBA41C5CDA9100BC37A8 /* V */,
+				FC46FD011C64A49700868B40 /* Classes */,
 				FCC0DB7B1C5CB26400BC37A8 /* Supporting Files */,
 			);
 			path = GroupShop;

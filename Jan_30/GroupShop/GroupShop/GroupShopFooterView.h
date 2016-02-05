@@ -18,5 +18,6 @@
 @interface GroupShopFooterView : UIView
 @property (nonatomic, weak) id <GroupShopFooterViewDelegate> delegate;
 
+- (void)endRefresh;
 + (instancetype)footerView;
 @end
