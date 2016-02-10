@@ -8,6 +8,8 @@
 
 #import "StatusCellTableViewCell.h"
 #import "Statuses.h"
+#import "StatusFrame.h"
+
 // 名字字体大小
 #define kNameFont    [UIFont systemFontOfSize:14]
 
@@ -50,6 +52,8 @@
     if (_vipView == nil) {
         _vipView = [[UIImageView alloc] init];
         // 在tableView中添加自视图都添加到contentView中
+        _vipView.image = [UIImage imageNamed:@"vip"];
+        _vipView.hidden = YES;
         [self.contentView addSubview:_vipView];
     }
     return _vipView;
@@ -77,9 +81,9 @@
     return _pictureView;
 }
 
-- (void)setStatus:(Statuses *)status
+- (void)setCellFrame:(StatusFrame *)cellFrame
 {
-    _status = status;
+    _cellFrame = cellFrame;
 
     // 设置数据
     [self settingData];
@@ -90,19 +94,22 @@
 
 - (void)settingData
 {
-    self.iconView.image = [UIImage imageNamed:self.status.icon];
-    self.nameView.text = self.status.name;
-    if (self.status.vip) {
-        self.vipView.image = [UIImage imageNamed:@"vip"];
+    self.iconView.image = [UIImage imageNamed:self.cellFrame.status.icon];
+    self.nameView.text = self.cellFrame.status.name;
+    if (self.cellFrame.status.vip) {
+        self.vipView.hidden = NO;
         self.nameView.textColor = [UIColor redColor];
+    }else{
+        self.vipView.hidden = YES;
+        self.nameView.textColor = [UIColor blackColor];
     }
-    self.textView.text = self.status.text;
+    self.textView.text = self.cellFrame.status.text;
 
     // 配图(可选参数)
     // imageNamed:nil 会出现如下错误：CUICatalog: Invalid asset name supplied: (null), or invalid scale factor: 2.000000
-    if (self.status.picture.length > 0) {
+    if (self.cellFrame.status.picture.length > 0) {
         self.pictureView.hidden = NO;
-        self.pictureView.image = [UIImage imageNamed:self.status.picture];
+        self.pictureView.image = [UIImage imageNamed:self.cellFrame.status.picture];
     }else{
         self.pictureView.hidden = YES;
     }
@@ -110,48 +117,13 @@
 
 - (void)settingFrame
 {
-    // 定义间距
-    CGFloat padding = 10;
-    // 1.头像的frame
-    CGFloat iconX = padding;
-    CGFloat iconY = padding;
-    CGFloat iconW = 50;
-    CGFloat iconH = 50;
-    self.iconView.frame = CGRectMake(iconX, iconY, iconW, iconH);
-
-    // 2. 姓名大小由文字的长度来决定
-    // boundingRectWithSize计算给定文本字符串所占的区域
-    // 返回值是一个x,y = 0的CGRect,w,h是计算好的宽高
-    //
-    // 如果要计算多行的准确高度，需要传入NSStringDrawingUsesLineFragmentOrigin选项
-    // dict用于指定字体的相关属性的字典，UIKit框架中的第一个头文件
-    // context: nil
-    NSDictionary* nameDict = @{NSFontAttributeName:kNameFont};
-    CGRect nameFrame = [self.status.name boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:nameDict context:nil];
-    nameFrame.origin.x = CGRectGetMaxX(self.iconView.frame) + padding;
-    nameFrame.origin.y = (self.iconView.bounds.size.height - nameFrame.size.height) * 0.5 + padding;
-    self.nameView.frame = nameFrame;
-
-    // 3.vip的图像
-    CGFloat vipX = CGRectGetMaxX(self.nameView.frame) + padding;
-    CGFloat vipY = self.nameView.frame.origin.y;
-    CGFloat vipW = 14;
-    CGFloat vipH = 14;
-    self.vipView.frame = CGRectMake(vipX, vipY, vipW, vipH);
-
-    // 4.正文
-    NSDictionary* textDict = @{NSFontAttributeName:kTextFont};
-    CGRect textRect = [self.status.text boundingRectWithSize:CGSizeMake(360, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:textDict context:nil];
-    textRect.origin.x = self.iconView.frame.origin.x;
-    textRect.origin.y = CGRectGetMaxY(self.iconView.frame) + padding;
-    self.textView.frame = textRect;
-
-    // 5.图像
-    CGFloat pictureX = self.iconView.frame.origin.x;
-    CGFloat pictureY = CGRectGetMaxY(self.textView.frame) + padding;
-    CGFloat pictureW = 200;
-    CGFloat pictureH = 150;
-    self.pictureView.frame = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+    self.iconView.frame = self.cellFrame.iconF;
+    self.nameView.frame = self.cellFrame.nameF;
+    self.vipView.frame = self.cellFrame.vipF;
+    self.textView.frame = self.cellFrame.textF;
+    if (self.cellFrame.status.picture.length > 0) {
+        self.pictureView.frame = self.cellFrame.pictureF;
+    }
 }
 
 - (void)awakeFromNib {

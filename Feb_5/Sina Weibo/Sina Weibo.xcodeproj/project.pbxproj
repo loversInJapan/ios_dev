@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC4041F81C65C2E500B69934 /* StatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4041F71C65C2E500B69934 /* StatusFrame.m */; };
+		FC4041FA1C65C63400B69934 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4041F91C65C63400B69934 /* CoreGraphics.framework */; };
 		FC46FD101C64A50F00868B40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC46FD0F1C64A50F00868B40 /* main.m */; };
 		FC46FD191C64A50F00868B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC46FD171C64A50F00868B40 /* Main.storyboard */; };
 		FC46FD1B1C64A51000868B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC46FD1A1C64A51000868B40 /* Assets.xcassets */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC4041F61C65C2E500B69934 /* StatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusFrame.h; sourceTree = "<group>"; };
+		FC4041F71C65C2E500B69934 /* StatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusFrame.m; sourceTree = "<group>"; };
+		FC4041F91C65C63400B69934 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FC46FD0B1C64A50F00868B40 /* Sina Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sina Weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC46FD0F1C64A50F00868B40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC46FD181C64A50F00868B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4041FA1C65C63400B69934 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,7 @@
 		FC46FD021C64A50F00868B40 = {
 			isa = PBXGroup;
 			children = (
+				FC4041F91C65C63400B69934 /* CoreGraphics.framework */,
 				FC46FD0D1C64A50F00868B40 /* Sina Weibo */,
 				FC46FD0C1C64A50F00868B40 /* Products */,
 			);
@@ -134,6 +141,8 @@
 			children = (
 				FC46FD4C1C64A73700868B40 /* Statuses.h */,
 				FC46FD4D1C64A73700868B40 /* Statuses.m */,
+				FC4041F61C65C2E500B69934 /* StatusFrame.h */,
+				FC4041F71C65C2E500B69934 /* StatusFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC46FD2E1C64A5F900868B40 /* ViewController.m in Sources */,
+				FC4041F81C65C2E500B69934 /* StatusFrame.m in Sources */,
 				FC46FD4E1C64A73700868B40 /* Statuses.m in Sources */,
 				FC46FD101C64A50F00868B40 /* main.m in Sources */,
 				FC46FD511C64D89600868B40 /* StatusCellTableViewCell.m in Sources */,

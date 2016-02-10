@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Statuses;
+@class StatusFrame;
 
 @interface StatusCellTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) Statuses* status;
+@property (strong, nonatomic) StatusFrame* cellFrame;
 
 @end

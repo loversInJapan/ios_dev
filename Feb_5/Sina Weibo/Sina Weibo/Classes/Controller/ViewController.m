@@ -9,23 +9,24 @@
 #import "ViewController.h"
 #import "Statuses.h"
 #import "StatusCellTableViewCell.h"
+#import "StatusFrame.h"
 
 static NSString* ID = @"Cell";
 
 @interface ViewController () <UITableViewDataSource>
 
-@property (strong, nonatomic) NSArray* statuses;
+@property (strong, nonatomic) NSArray* statusFrames;
 
 @end
 
 @implementation ViewController
 // 懒加载
-- (NSArray *)statuses
+- (NSArray *)statusFrames
 {
-    if (_statuses == nil) {
-        _statuses = [Statuses statusList];
+    if (_statusFrames == nil) {
+        _statusFrames = [StatusFrame statusFrames];
     }
-    return _statuses;
+    return _statusFrames;
 }
 
 - (void)viewDidLoad {
@@ -42,7 +43,7 @@ static NSString* ID = @"Cell";
 #pragma mark - 数据源方法
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.statuses.count;
+    return self.statusFrames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -66,7 +67,8 @@ static NSString* ID = @"Cell";
 //        cell = [[StatusCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
 //    }
 
-    cell.status = self.statuses[indexPath.row];
+    StatusFrame* frame = self.statusFrames[indexPath.row];
+    cell.cellFrame = frame;
 //    cell.textLabel.text = cell.status.name;
     return cell;
 }
@@ -84,10 +86,9 @@ static NSString* ID = @"Cell";
      问题：如何在cell实例化之前，获得行高？
      解决方法：通过status可以计算得到行高！=》再建立一个模型，专门计算所有控件的位置
      */
-//    HMStatusFrame *statusFrame = self.statusFrames[indexPath.row];
-//
-//    return statusFrame.cellHeight;
-    return 300;
+    StatusFrame *statusFrame = self.statusFrames[indexPath.row];
+
+    return statusFrame.cellHeight;
 }
 
 @end
