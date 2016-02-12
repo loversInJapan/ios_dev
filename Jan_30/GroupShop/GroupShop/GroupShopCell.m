@@ -23,11 +23,12 @@
     GroupShopCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
     if (cell == nil) {
-        NSLog(@"load XIB");
+//        NSLog(@"load XIB");
         cell = [[[NSBundle mainBundle] loadNibNamed:@"GroupShopCell" owner:nil options:nil] lastObject];
     }
     return cell;
 }
+
 - (void)setInfo:(GroupShopInfo *)info
 {
     _info = info;
@@ -46,7 +47,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSLog(@"%s", __func__);
+//        NSLog(@"%s", __func__);
     }
     return self;
 }
@@ -56,7 +57,7 @@
  */
 - (void)awakeFromNib {
     // Initialization code
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -70,7 +70,7 @@
 
 - (void)pageChanged:(UIPageControl*)page
 {
-    int x = page.currentPage * self.scrollViewOfImages.bounds.size.width;
+    int x = self.pageController.currentPage * self.scrollViewOfImages.bounds.size.width;
     [self.scrollViewOfImages setContentOffset:CGPointMake(x, 0) animated:YES];
 }
 

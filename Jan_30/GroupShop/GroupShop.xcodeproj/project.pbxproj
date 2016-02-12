@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC39E5491C6DF20D001D08F5 /* GroupShopHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39E5481C6DF20D001D08F5 /* GroupShopHeaderView.m */; };
 		FC9C82C41C632BB200C8A712 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC9C82C31C632BB200C8A712 /* HeaderView.xib */; };
 		FCC0DB7D1C5CB26400BC37A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB7C1C5CB26400BC37A8 /* main.m */; };
 		FCC0DB801C5CB26400BC37A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0DB7F1C5CB26400BC37A8 /* AppDelegate.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC39E5471C6DF20D001D08F5 /* GroupShopHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupShopHeaderView.h; sourceTree = "<group>"; };
+		FC39E5481C6DF20D001D08F5 /* GroupShopHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupShopHeaderView.m; sourceTree = "<group>"; };
 		FC9C82C31C632BB200C8A712 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		FCC0DB781C5CB26400BC37A8 /* GroupShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC0DB7C1C5CB26400BC37A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				FCC0DBA51C5CDB3000BC37A8 /* GroupShopFooterView.h */,
 				FCC0DBA61C5CDB3000BC37A8 /* GroupShopFooterView.m */,
 				FCC0DBA81C5CDB4200BC37A8 /* GroupShopFooterView.xib */,
+				FC39E5471C6DF20D001D08F5 /* GroupShopHeaderView.h */,
+				FC39E5481C6DF20D001D08F5 /* GroupShopHeaderView.m */,
 				FC9C82C31C632BB200C8A712 /* HeaderView.xib */,
 			);
 			name = V;
@@ -222,6 +227,7 @@
 			files = (
 				FCC0DB831C5CB26400BC37A8 /* ViewController.m in Sources */,
 				FCC0DB961C5CB31B00BC37A8 /* GroupShopInfo.m in Sources */,
+				FC39E5491C6DF20D001D08F5 /* GroupShopHeaderView.m in Sources */,
 				FCC0DB9B1C5CBEC600BC37A8 /* GroupShopCell.m in Sources */,
 				FCC0DBA71C5CDB3000BC37A8 /* GroupShopFooterView.m in Sources */,
 				FCC0DB801C5CB26400BC37A8 /* AppDelegate.m in Sources */,

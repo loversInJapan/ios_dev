@@ -10,6 +10,7 @@
 #import "GroupShopInfo.h"
 #import "GroupShopCell.h"
 #import "GroupShopFooterView.h"
+#import "GroupShopHeaderView.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, GroupShopFooterViewDelegate>
 
@@ -33,12 +34,17 @@
     self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     // 从XIB加载footerView
     GroupShopFooterView* footer = [GroupShopFooterView footerView];
-    // 设置分割线
-    UIView* headerView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil] lastObject];
-    self.tableView.tableHeaderView = headerView;
     // 并设置代理
     footer.delegate = self;
     self.tableView.tableFooterView = footer;
+//    // 设置分割线
+//    UIView* headerView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderView" owner:nil options:nil] lastObject];
+//    self.tableView.tableHeaderView = headerView;
+    // 从XIB加载headerView
+    GroupShopHeaderView* header = [GroupShopHeaderView loadHeaderView];
+    [header setScrollViewContent];
+    self.tableView.tableHeaderView = header;
+    
 }
 
 #pragma mark - footerView delegate method
