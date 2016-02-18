@@ -100,7 +100,7 @@
         self.vipView.hidden = NO;
         self.nameView.textColor = [UIColor redColor];
     }else{
-        self.vipView.hidden = YES;
+//        self.vipView.hidden = YES;
         self.nameView.textColor = [UIColor blackColor];
     }
     self.textView.text = self.cellFrame.status.text;

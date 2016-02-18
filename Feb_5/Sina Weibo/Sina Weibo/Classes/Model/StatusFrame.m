@@ -73,11 +73,9 @@
 
 + (NSArray *)statusFrames
 {
-    NSArray* array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"statuses.plist" ofType:nil]];
+    NSArray* array = [Statuses statusList];
     NSMutableArray* arrayM = [NSMutableArray array];
-    for (NSDictionary* dict in array) {
-        Statuses* status = [Statuses statusWithDict:dict];
-
+    for (Statuses *status in array) {
         StatusFrame* frame = [[StatusFrame alloc] init];
 
         frame.status = status;

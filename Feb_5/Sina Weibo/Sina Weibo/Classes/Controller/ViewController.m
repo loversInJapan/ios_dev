@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Statuses.h"
+//#import "Statuses.h"
 #import "StatusCellTableViewCell.h"
 #import "StatusFrame.h"
 
@@ -67,8 +67,8 @@ static NSString* ID = @"Cell";
 //        cell = [[StatusCellTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
 //    }
 
-    StatusFrame* frame = self.statusFrames[indexPath.row];
-    cell.cellFrame = frame;
+    StatusFrame* cellframe = self.statusFrames[indexPath.row];
+    cell.cellFrame = cellframe;
 //    cell.textLabel.text = cell.status.name;
     return cell;
 }
