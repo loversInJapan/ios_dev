@@ -16,6 +16,7 @@
 		FC0D7BD41C75AE84009EC8E1 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0D7BD31C75AE84009EC8E1 /* messages.plist */; };
 		FC0D7BDB1C75B30E009EC8E1 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D7BDA1C75B30E009EC8E1 /* MessageModel.m */; };
 		FC0D7BDF1C75B8C2009EC8E1 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D7BDE1C75B8C2009EC8E1 /* MessageCell.m */; };
+		FC97DAEE1C7717BD004930D7 /* MessageModelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC97DAED1C7717BD004930D7 /* MessageModelFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		FC0D7BDA1C75B30E009EC8E1 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		FC0D7BDD1C75B8C2009EC8E1 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
 		FC0D7BDE1C75B8C2009EC8E1 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		FC97DAEB1C771789004930D7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FC97DAEC1C7717BD004930D7 /* MessageModelFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelFrame.h; sourceTree = "<group>"; };
+		FC97DAED1C7717BD004930D7 /* MessageModelFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				FC0D7BBF1C759F57009EC8E1 /* AppDelegate.h */,
 				FC0D7BC01C759F57009EC8E1 /* AppDelegate.m */,
+				FC97DAEB1C771789004930D7 /* Constants.h */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -109,6 +114,8 @@
 			children = (
 				FC0D7BD91C75B30E009EC8E1 /* MessageModel.h */,
 				FC0D7BDA1C75B30E009EC8E1 /* MessageModel.m */,
+				FC97DAEC1C7717BD004930D7 /* MessageModelFrame.h */,
+				FC97DAED1C7717BD004930D7 /* MessageModelFrame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,6 +213,7 @@
 				FC0D7BDF1C75B8C2009EC8E1 /* MessageCell.m in Sources */,
 				FC0D7BC41C759F58009EC8E1 /* ViewController.m in Sources */,
 				FC0D7BC11C759F57009EC8E1 /* AppDelegate.m in Sources */,
+				FC97DAEE1C7717BD004930D7 /* MessageModelFrame.m in Sources */,
 				FC0D7BBE1C759F57009EC8E1 /* main.m in Sources */,
 				FC0D7BDB1C75B30E009EC8E1 /* MessageModel.m in Sources */,
 			);
@@ -354,6 +362,7 @@
 				FC0D7BD21C759F58009EC8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MessageModel;
+@class MessageModelFrame;
 
 @interface MessageCell : UITableViewCell
 
-@property (strong, nonatomic) MessageModel* message;
+@property (strong, nonatomic) MessageModelFrame* messageFrame;
 
 + (MessageCell*)cellWithTableView:(UITableView*)tableView;
 

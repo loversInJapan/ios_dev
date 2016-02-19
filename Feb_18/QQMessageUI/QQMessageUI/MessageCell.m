@@ -8,9 +8,8 @@
 
 #import "MessageCell.h"
 #import "MessageModel.h"
-
-#define kTimeFont    10
-#define kTextFont    14
+#import "MessageModelFrame.h"
+#import "Constants.h"
 
 @interface MessageCell ()
 // 头像
@@ -25,7 +24,7 @@
 - (UIImageView *)icon
 {
     if (_icon == nil) {
-        _icon = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        _icon = [[UIImageView alloc] init];
         [self.contentView addSubview:_icon];
     }
     return _icon;
@@ -34,8 +33,9 @@
 - (UILabel *)time
 {
     if (_time == nil) {
-        _time = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, 100, 50)];
+        _time = [[UILabel alloc] init];
         _time.font = [UIFont systemFontOfSize:kTimeFont];
+        _time.textAlignment = NSTextAlignmentCenter;
         [self.contentView addSubview:_time];
     }
     return _time;
@@ -45,24 +45,38 @@
 {
     if (_textButton == nil) {
         _textButton = [[UIButton alloc] init];
-        _textButton.frame = CGRectMake(0, 55, 300, 100);
-        [_textButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _textButton.titleLabel.numberOfLines = 0;
+        _textButton.titleLabel.font = kTextFont;
         [self.contentView addSubview:_textButton];
     }
     return _textButton;
 }
 
-- (void)setMessage:(MessageModel *)message
+- (void)setMessageFrame:(MessageModelFrame *)messageFrame
+{
+    _messageFrame = messageFrame;
+    [self setCellDataWithMessage:messageFrame.message];
+    [self setCellFrame];
+}
+
+- (void)setCellDataWithMessage:(MessageModel*)message
 {
     if (message.type == 0) {
-        self.icon.image = [UIImage imageNamed:@"Jobs"];
-        [self.textButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_nor"] forState:UIControlStateNormal];
-    } else {
         self.icon.image = [UIImage imageNamed:@"Gatsby"];
         [self.textButton setBackgroundImage:[UIImage imageNamed:@"chat_send_nor"] forState:UIControlStateNormal];
+    } else {
+        self.icon.image = [UIImage imageNamed:@"Jobs"];
+        [self.textButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_nor"] forState:UIControlStateNormal];
     }
     [self.textButton setTitle:message.text forState:UIControlStateNormal];
     self.time.text = message.time;
+}
+
+- (void)setCellFrame
+{
+    self.icon.frame = self.messageFrame.iconFrame;
+    self.time.frame = self.messageFrame.timeFrame;
+    self.textButton.frame = self.messageFrame.textFrame;
 }
 
 + (MessageCell *)cellWithTableView:(UITableView *)tableView

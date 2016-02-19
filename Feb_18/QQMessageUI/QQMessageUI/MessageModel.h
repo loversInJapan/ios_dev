@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 typedef enum
 {
-    MessageModelMe = 0, //message send by me
-    MessageModelFriend // message send by others
+    MessageModelFriend = 0, //message send by others
+    MessageModelMe // message send by me
 }MessageModelType;
 
 @interface MessageModel : NSObject
