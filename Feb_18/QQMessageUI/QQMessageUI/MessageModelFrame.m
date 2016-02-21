@@ -17,15 +17,17 @@
     _message = message;
     
     // 时间frame
-    CGFloat timeX = 0;
-    CGFloat timeY = 0;
-    CGFloat timeW = kScreenW;
-    CGFloat timeH = kNormoalH;
-    _timeFrame = CGRectMake(timeX, timeY, timeW, timeH);
+    if (message.shouldHideTime == NO) {
+        CGFloat timeX = 0;
+        CGFloat timeY = 0;
+        CGFloat timeW = kScreenW;
+        CGFloat timeH = kNormoalH;
+        _timeFrame = CGRectMake(timeX, timeY, timeW, timeH);
+    }
 
     // 头像的frame
     CGFloat iconX;
-    CGFloat iconY = CGRectGetMaxY(_timeFrame);
+    CGFloat iconY;
     CGFloat iconW = kIconW;
     CGFloat iconH = kIconH;
     if (message.type == MessageModelMe) {
@@ -33,13 +35,18 @@
     } else {
         iconX = kScreenW - kPadding - kIconW;
     }
+    if (message.shouldHideTime == NO) {
+        iconY = CGRectGetMaxY(_timeFrame);
+    }else{
+        iconY = kPadding;
+    }
     _iconFrame = CGRectMake(iconX, iconY, iconW, iconH);
 
     // 正文的frame
     CGFloat textX;
     CGFloat textY = iconY + kPadding;
     NSDictionary* dict = @{NSFontAttributeName:kTextFont};
-    CGRect textRealFrame = [message.text boundingRectWithSize:CGSizeMake(150, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil];
+    CGRect textRealFrame = [message.text boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil];
     if (message.type == MessageModelMe) {
         textX = CGRectGetMaxX(_iconFrame) + kPadding;
     } else {
@@ -59,8 +66,12 @@
     NSMutableArray* arrM = [NSMutableArray array];
     for (MessageModel* message in messages) {
         MessageModelFrame* messageFrame = [[MessageModelFrame alloc] init];
-        messageFrame.message = message;
+        // 获取数组中的最后一个对象
+        MessageModelFrame* lastFrame = [arrM lastObject];
+        // 比较时间是否相同，并把结果赋予shuoldHideTime
+        message.shouldHideTime = [lastFrame.message.time isEqualToString:message.time];
 
+        messageFrame.message = message;
         [arrM addObject:messageFrame];
     }
     return arrM;

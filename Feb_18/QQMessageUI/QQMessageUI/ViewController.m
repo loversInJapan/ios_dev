@@ -10,12 +10,15 @@
 #import "MessageModel.h"
 #import "MessageCell.h"
 #import "MessageModelFrame.h"
+#import "Constants.h"
 
 //static NSString *ID = @"Cell";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSMutableArray* messageFrames;
+
+@property (weak, nonatomic) IBOutlet UITableView *messageTableView;
 
 @end
 
@@ -28,11 +31,17 @@
     return _messageFrames;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    [self.tableView registerClass:[self.tableView class] forCellReuseIdentifier:ID];
-
+    //  取消tableview中单元格的选中
+    self.messageTableView.allowsSelection = NO;
+//    self.messageTableView.contentInset = UIEdgeInsetsMake(kPadding, 0, 0, 0);
 }
 
 - (void)didReceiveMemoryWarning {

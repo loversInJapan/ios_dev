@@ -18,6 +18,8 @@ typedef enum
 @property (copy, nonatomic) NSString* text;
 @property (copy, nonatomic) NSString* time;
 @property (assign, nonatomic) MessageModelType type;
+// 是否隐藏时间,BOOL值默认为NO
+@property (assign, nonatomic) BOOL shouldHideTime;
 
 - (instancetype)initWithDict:(NSDictionary*) dict;
 + (instancetype)messageWithDict:(NSDictionary*) dict;

@@ -47,6 +47,7 @@
         _textButton = [[UIButton alloc] init];
         _textButton.titleLabel.numberOfLines = 0;
         _textButton.titleLabel.font = kTextFont;
+        [_textButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.contentView addSubview:_textButton];
     }
     return _textButton;
@@ -86,7 +87,7 @@
     if (cell == nil) {
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
-    [cell setBackgroundColor:[UIColor grayColor]];
+//    [cell setBackgroundColor:[UIColor grayColor]];
     return cell;
 }
 
