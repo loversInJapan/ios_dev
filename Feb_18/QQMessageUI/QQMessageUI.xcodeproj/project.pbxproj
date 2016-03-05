@@ -17,6 +17,7 @@
 		FC0D7BDB1C75B30E009EC8E1 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D7BDA1C75B30E009EC8E1 /* MessageModel.m */; };
 		FC0D7BDF1C75B8C2009EC8E1 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0D7BDE1C75B8C2009EC8E1 /* MessageCell.m */; };
 		FC97DAEE1C7717BD004930D7 /* MessageModelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = FC97DAED1C7717BD004930D7 /* MessageModelFrame.m */; };
+		FCEDEB3B1C7B040D00C16913 /* autoReplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCEDEB3A1C7B040D00C16913 /* autoReplay.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC97DAEB1C771789004930D7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FC97DAEC1C7717BD004930D7 /* MessageModelFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelFrame.h; sourceTree = "<group>"; };
 		FC97DAED1C7717BD004930D7 /* MessageModelFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelFrame.m; sourceTree = "<group>"; };
+		FCEDEB3A1C7B040D00C16913 /* autoReplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoReplay.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 		FC0D7BBC1C759F57009EC8E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCEDEB3A1C7B040D00C16913 /* autoReplay.plist */,
+				FC0D7BD31C75AE84009EC8E1 /* messages.plist */,
 				FC0D7BC51C759F58009EC8E1 /* Main.storyboard */,
 				FC0D7BC81C759F58009EC8E1 /* Assets.xcassets */,
 				FC0D7BCA1C759F58009EC8E1 /* LaunchScreen.storyboard */,
 				FC0D7BCD1C759F58009EC8E1 /* Info.plist */,
-				FC0D7BD31C75AE84009EC8E1 /* messages.plist */,
 				FC0D7BBD1C759F57009EC8E1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -132,8 +135,8 @@
 		FC0D7BDC1C75B5B4009EC8E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FC0D7BD81C75B244009EC8E1 /* View */,
 				FC0D7BD71C75B202009EC8E1 /* Model */,
+				FC0D7BD81C75B244009EC8E1 /* View */,
 				FC0D7BD61C75B1E0009EC8E1 /* Controllor */,
 			);
 			name = Classes;
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCEDEB3B1C7B040D00C16913 /* autoReplay.plist in Resources */,
 				FC0D7BD41C75AE84009EC8E1 /* messages.plist in Resources */,
 				FC0D7BCC1C759F58009EC8E1 /* LaunchScreen.storyboard in Resources */,
 				FC0D7BC91C759F58009EC8E1 /* Assets.xcassets in Resources */,

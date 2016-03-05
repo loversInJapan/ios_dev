@@ -40,7 +40,10 @@
                                         <rect key="frame" x="44" y="7" width="243" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="KLP-qJ-SMv" id="007-43-FpS"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,6 +62,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="inputTextField" destination="2xG-Xo-Qea" id="LLw-zp-WuR"/>
                         <outlet property="messageTableView" destination="Yy7-Hi-TVz" id="nci-qa-bOX"/>
                     </connections>
                 </viewController>

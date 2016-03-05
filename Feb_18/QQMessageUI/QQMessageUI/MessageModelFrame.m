@@ -44,9 +44,12 @@
 
     // 正文的frame
     CGFloat textX;
-    CGFloat textY = iconY + kPadding;
+    CGFloat textY = iconY;
     NSDictionary* dict = @{NSFontAttributeName:kTextFont};
     CGRect textRealFrame = [message.text boundingRectWithSize:CGSizeMake(200, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:dict context:nil];
+    // 加大宽高，因为textButton加了edge
+    textRealFrame.size.width += (2 * kBtnInsetEdge); //左右边都加了edge，所以宽应该加两倍的edge宽
+    textRealFrame.size.height += (2 * kBtnInsetEdge); //同上
     if (message.type == MessageModelMe) {
         textX = CGRectGetMaxX(_iconFrame) + kPadding;
     } else {
@@ -57,7 +60,7 @@
     _textFrame = textRealFrame;
 
     // cell的高度
-    _cellH = MAX(CGRectGetMaxY(_iconFrame), CGRectGetMaxY(_textFrame)) + 2 * kPadding;
+    _cellH = MAX(CGRectGetMaxY(_iconFrame), CGRectGetMaxY(_textFrame)) + kPadding;
 }
 
 + (NSMutableArray *)messageModelFrames

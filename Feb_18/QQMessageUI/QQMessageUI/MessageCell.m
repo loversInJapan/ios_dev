@@ -48,6 +48,9 @@
         _textButton.titleLabel.numberOfLines = 0;
         _textButton.titleLabel.font = kTextFont;
         [_textButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        // 加边界
+        _textButton.contentEdgeInsets = UIEdgeInsetsMake(kBtnInsetEdge, kBtnInsetEdge, kBtnInsetEdge, kBtnInsetEdge);
+//        _textButton.backgroundColor = [UIColor grayColor];
         [self.contentView addSubview:_textButton];
     }
     return _textButton;
@@ -64,13 +67,21 @@
 {
     if (message.type == 0) {
         self.icon.image = [UIImage imageNamed:@"Gatsby"];
-        [self.textButton setBackgroundImage:[UIImage imageNamed:@"chat_send_nor"] forState:UIControlStateNormal];
+        [self.textButton setBackgroundImage:[self strechImageWithImageName:@"chat_send_nor"] forState:UIControlStateNormal];
     } else {
         self.icon.image = [UIImage imageNamed:@"Jobs"];
-        [self.textButton setBackgroundImage:[UIImage imageNamed:@"chat_recive_nor"] forState:UIControlStateNormal];
+        [self.textButton setBackgroundImage:[self strechImageWithImageName:@"chat_recive_nor"] forState:UIControlStateNormal];
     }
     [self.textButton setTitle:message.text forState:UIControlStateNormal];
     self.time.text = message.time;
+}
+
+- (UIImage*)strechImageWithImageName:(NSString*)imageName
+{
+    UIImage* origin = [UIImage imageNamed:imageName];
+    CGFloat h = origin.size.width * 0.5 - 1;
+    CGFloat w = origin.size.height * 0.5 - 1;
+    return [origin resizableImageWithCapInsets:UIEdgeInsetsMake(h, w, h, w) resizingMode:UIImageResizingModeStretch];
 }
 
 - (void)setCellFrame
@@ -86,6 +97,7 @@
     MessageCell* cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        cell.backgroundColor = [UIColor clearColor];
     }
 //    [cell setBackgroundColor:[UIColor grayColor]];
     return cell;

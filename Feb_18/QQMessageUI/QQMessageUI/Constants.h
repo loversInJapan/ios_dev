@@ -13,6 +13,8 @@
 
 #define kScreenW     [UIScreen mainScreen].bounds.size.width
 
+#define kScreenH     [UIScreen mainScreen].bounds.size.height
+
 #define kPadding     10
 
 #define kIconW       55
@@ -22,5 +24,7 @@
 #define kTextFont    [UIFont systemFontOfSize:14]
 
 #define kTimeFont    10
+
+#define kBtnInsetEdge 20
 
 #endif /* Constants_h */
