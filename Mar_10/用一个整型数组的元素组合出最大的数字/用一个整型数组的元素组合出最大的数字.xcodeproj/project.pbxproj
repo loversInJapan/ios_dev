@@ -1,0 +1,244 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC8FB70A1C946E2D00A6D7AD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC8FB7091C946E2D00A6D7AD /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC8FB7041C946E2D00A6D7AD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC8FB7061C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "用一个整型数组的元素组合出最大的数字"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8FB7091C946E2D00A6D7AD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC8FB7031C946E2D00A6D7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC8FB6FD1C946E2D00A6D7AD = {
+			isa = PBXGroup;
+			children = (
+				FC8FB7081C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */,
+				FC8FB7071C946E2D00A6D7AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8FB7071C946E2D00A6D7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC8FB7061C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC8FB7081C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */ = {
+			isa = PBXGroup;
+			children = (
+				FC8FB7091C946E2D00A6D7AD /* main.cpp */,
+			);
+			path = "用一个整型数组的元素组合出最大的数字";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC8FB7051C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8FB70D1C946E2D00A6D7AD /* Build configuration list for PBXNativeTarget "用一个整型数组的元素组合出最大的数字" */;
+			buildPhases = (
+				FC8FB7021C946E2D00A6D7AD /* Sources */,
+				FC8FB7031C946E2D00A6D7AD /* Frameworks */,
+				FC8FB7041C946E2D00A6D7AD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "用一个整型数组的元素组合出最大的数字";
+			productName = "用一个整型数组的元素组合出最大的数字";
+			productReference = FC8FB7061C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8FB6FE1C946E2D00A6D7AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Jon;
+				TargetAttributes = {
+					FC8FB7051C946E2D00A6D7AD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = FC8FB7011C946E2D00A6D7AD /* Build configuration list for PBXProject "用一个整型数组的元素组合出最大的数字" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC8FB6FD1C946E2D00A6D7AD;
+			productRefGroup = FC8FB7071C946E2D00A6D7AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC8FB7051C946E2D00A6D7AD /* 用一个整型数组的元素组合出最大的数字 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC8FB7021C946E2D00A6D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8FB70A1C946E2D00A6D7AD /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC8FB70B1C946E2D00A6D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FC8FB70C1C946E2D00A6D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FC8FB70E1C946E2D00A6D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC8FB70F1C946E2D00A6D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC8FB7011C946E2D00A6D7AD /* Build configuration list for PBXProject "用一个整型数组的元素组合出最大的数字" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8FB70B1C946E2D00A6D7AD /* Debug */,
+				FC8FB70C1C946E2D00A6D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8FB70D1C946E2D00A6D7AD /* Build configuration list for PBXNativeTarget "用一个整型数组的元素组合出最大的数字" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8FB70E1C946E2D00A6D7AD /* Debug */,
+				FC8FB70F1C946E2D00A6D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC8FB6FE1C946E2D00A6D7AD /* Project object */;
+}
